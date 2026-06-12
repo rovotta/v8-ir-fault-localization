@@ -1,0 +1,78 @@
+(1) what the bug is:
+
+  The buggy V8 version is a missing -0 case in TurboFan's typer. The typer 
+is the phase of optimization which lables variables with the type that they are
+(example: 1 is labeled an int, "v8" is labed a str, ect.). When TurboFan's Typer 
+phase computes the output type for a NumberMax node, which represents Math.max in 
+the source code, it does not add -0 as a possibility for the input types before computing 
+the output range. This happens inside operation-typer.cc.
+
+here is the official bug report: https://issues.chromium.org/issues/40052054
+
+  looking at the line: rhs = Type::Intersect(rhs, cache_->kInteger, zone());,
+Type::MinusZero canot be an input because -0 ia not being accounted for in TurboFan's 
+typer properly. The output type of Math.max will not be correct in some case because 
+the NumberMax IR node will have an incorrect type range.
+
+(2) what the observable buggy behavior is when running the minimized-NumberMax.js with the buggy V8:
+
+this is the output we get when running minimised-NumberMax.js on the buggy V8:
+
+Expected output:    true (Before optimizaiton)
+                    true (after)
+
+Actual output:      true
+                    false
+
+Our first line is produced by the unoptimized run (using just the interpereter). It 
+looks at Object.is(Math.max(-1, -0), -0) and correctly evaluates that -0 = 0 > -1, 
+and -0 and -0 are equal, so true is returned 
+
+our second line is produced after TurboFan optimizes the function.This is where the 
+Typer incorrectly assigns the type Range(1, inf) to the NumberMax node. Wer're missing 
+the -0 case here, so we will never get an output of -0. Object.is(Math.max(-1, <not -0>), -0)
+will always return false.
+
+
+(3) what did you do to avoid the bug in the JIT compiler (in other words, what change did you make in the JS code?)
+
+the inner loop variable, i, in the poc is initialized to a 0 instead of -0.0.
+
+minimised-NumberMax.js:
+    for (let i = -0.0; i < 1; i++)
+
+minimised-NumberMax-modified.js:
+    for (let i = 0; i < 1; i++)
+
+By starting i at 0 instead of -0.0, -0.0 is never accounted for in Math.max()
+in the first place. The TurboFan Typer computes a correct output type for the 
+NumberMax node (Range(0, 1)), so no incorrect optimization occurs. The output is 
+false before and after optimization:
+
+Expected output:    false
+                    false
+
+Actual output:      false
+                    false
+
+
+(4) the difference you see between the non-buggy IR  (turbo-passing-pretty.json) and buggy IR (turbo-buggy-pretty.json)
+
+  Both turbo-buggy-pretty.json and turbo-passing-pretty.json have the same
+optimization phases (V8.TFBytecodeGraphBuilder through disassembly). The graphs
+are structurally similar since both programs have very similar functionality. We 
+just changed one variable. The main difference appears in the type annotations 
+assigned to the NumberMax node (node 129) across the phases:
+
+The biggest difference is that in out buggy IR, node 129 dies (live: False) 
+after just 4 levels of optimization out of 26 where the passing IR hits all levels 
+of optimization. 
+
+
+(5) the difference between the victim nodes (buggy_node_129.json vs. passing_node_129.json)
+
+Node 129 is the NumberMax node where the IR represents Math.max(-1, i). the buggy node gives
+an incorrect type of "type:   Range(1, inf)". Because the node only looks at non-zero numbers,
+you can never get Object.is(Math.max(-1, <not -0>), -0) to be true. the passing node gives you a 
+type "type:   Range(0, 1)" which allows the code to run properly. Infact the fixed version of this 
+bug's IR gives the type "type:   Range(MinusZero | 1, inf)" so they just added in that -0 case.
