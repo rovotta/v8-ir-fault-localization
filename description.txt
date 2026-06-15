@@ -76,3 +76,34 @@ an incorrect type of "type:   Range(1, inf)". Because the node only looks at non
 you can never get Object.is(Math.max(-1, <not -0>), -0) to be true. the passing node gives you a 
 type "type:   Range(0, 1)" which allows the code to run properly. Infact the fixed version of this 
 bug's IR gives the type "type:   Range(MinusZero | 1, inf)" so they just added in that -0 case.
+
+(6) commands used:
+
+The specfic branch we are on with the buggy v8:
+  /opt/v8_350e0f7997f/v8/out/x64.release/d8 --version
+
+You can copy the PoC and add it to the blank file you create when you run:
+  vim minimised-NumberMax.js
+
+To compile this buggy version with our specific PoC, minimized-NumberMax.js:
+  /opt/v8_350e0f7997f/v8/out/x64.release/d8 --allow-natives-syntax minimised-NumberMax.js
+
+To generate its IR:
+  /opt/v8_350e0f7997f/v8/out/x64.release/d8 --allow-natives-syntax --trace-turbo minimised-NumberMax.js
+
+You can do:
+  vim turbo-opt-0.json
+to see the IR, but it will not be in JSON format, so run this built-in JSON command to "make it pretty":
+  python -m json.tool turbo-opt-0.json > turbo-buggy-pretty.json
+
+you can then repeat this process with a debugged version by creating a new py file with vim, copying the Poc into it,
+then making changes. you can then recompile -> build then IR -> make it pretty 
+
+inside vim, you can use "/" to search all lines bellow your curser and "?" to search all lines above your curser.
+  esc + : + w + q to save and quit
+
+  vimdiff file1.txt file2.txt to comapare two IRs line-by-line
+
+I would use /NumMax to find node 129, then hit enter then "n" to toggle between all the different node 129s in the different optimization phases.
+You can then use ?V8.TF to search up to see which optimization phase you are in. the 3rd and 4th node 129s are the ones you want to look at because they are the ones in the buggy typer and type lowering phases. 
+
