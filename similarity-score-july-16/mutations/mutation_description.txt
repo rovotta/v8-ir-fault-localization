@@ -1,0 +1,783 @@
+MUTATION DESCRIPTIONS
+
+Original PoC: minimised-NumberMax.js
+Total Mutations Generated: 50
+Total Mutable Nodes: 36
+Coverage: All 36 nodes hit at least once
+
+
+MUTATION 1
+  Node 33 (UnaryExpression): Unary operation: -
+Change Description:
+[Node 33] Changed the unary minus to a unary plus in the comparison.
+Original: `res = Object.is(Math.max(-1, i), -0);`
+New: `res = Object.is(Math.max(-1, i), +0);`
+
+
+MUTATION 2
+  Node 8 (Literal): Constant value: 1
+  Node 13 (UnaryExpression): Unary operation: -
+  Node 21 (Identifier): Identifier: res
+  Node 22 (CallExpression): Method call
+Change Description:
+[Node 8] Changed the constant value from 1 to 2.
+Original: for (a = 0; a < 1; a++) {
+New: for (a = 0; a < 2; a++) {
+
+[Node 13] Replaced the unary minus operation with unary plus.
+Original: res = Object.is(Math.max(-1, i), -0);
+New: res = Object.is(Math.max(1, i), +0);
+
+[Node 21] Changed the identifier from 'res' to 'result'.
+Original: return res;
+New: return result;
+
+[Node 22] Replaced 'Object.is' method call with 'Object.is' method call but with different parameters.
+Original: res = Object.is(Math.max(-1, i), -0);
+New: res = Object.is(Math.max(1, i), +0);
+
+
+MUTATION 3
+  Node 9 (UpdateExpression): Update: ++
+Change Description:
+[Node 9] Changed the increment operator from '++' to '--' to decrement the loop index.
+Original: `for (let i = -0.0; i < 1; i++) {`
+New: `for (let i = -0.0; i < 1; i--) {`
+
+
+MUTATION 4
+  Node 22 (CallExpression): Method call
+  Node 27 (MemberExpression): Member access
+  Node 20 (AssignmentExpression): Assignment: =
+  Node 30 (UnaryExpression): Unary operation: -
+Change Description:
+[Node 22] Changed the method from Math.max to Math.min for mutation.
+Original: `res = Object.is(Math.max(-1, i), -0);`
+New: `res = Object.is(Math.min(-1, i), -0);`
+
+[Node 27] Changed the accessed member from `max` to `min` to support the new method call.
+Original: `Math.max(-1, i)`
+New: `Math.min(-1, i)`
+
+[Node 20] Changed the assignment operator from `=` to `+=` to introduce a mutation.
+Original: `res = Object.is(Math.max(-1, i), -0);`
+New: `res += Object.is(Math.min(-1, i), -0);`
+
+[Node 30] Flipped the unary negative operator to a positive to introduce a mutation.
+Original: `Math.max(-1, i)`
+New: `Math.min(-1, i)`
+
+
+MUTATION 5
+  Node 5 (Literal): Constant value: 0
+  Node 30 (UnaryExpression): Unary operation: -
+  Node 15 (BinaryExpression): Binary operation: <
+  Node 20 (AssignmentExpression): Assignment: =
+Change Description:
+[Node 5] Changed the constant value from 0 to 1 to mutate the initial assignment in the first loop.
+Original: `for (a = 0; a < 1; a++) {`
+New: `for (a = 1; a <= 1; a++) {`
+
+[Node 30] Changed the unary minus operation to a unary plus to mutate the initial value of `i`.
+Original: `for (let i = -0.0; i < 1; i++) {`
+New: `for (let i = +0.0; i < 1; i++) {`
+
+[Node 15] Changed the less than operator `<` to a less than or equal to `<=` to adjust the loop conditions.
+Original: `for (let i = -0.0; i < 1; i++) {`
+New: `for (let i = +0.0; i <= 1; i++) {`
+
+[Node 20] Changed the assignment from `=` to `+=` to accumulate values instead of overwriting.
+Original: `res = Object.is(Math.max(-1, i), -0);`
+New: `res += Object.is(Math.max(-1, i), -0);`
+
+
+MUTATION 6
+  Node 18 (UpdateExpression): Update: ++
+  Node 30 (UnaryExpression): Unary operation: -
+  Node 1 (Identifier): Identifier: res
+Change Description:
+[Node 18] Changed the update operation from increment to increment and equality check.
+Original: `for (let i = -0.0; i < 1; i++) {`
+New: `for (let i = -0.0; i <= 1; i++) {`
+[Node 30] Changed the unary operation from negative to positive.
+Original: `res = Object.is(Math.max(-1, i), -0);`
+New: `result = Object.is(Math.max(+1, i), -0);`
+[Node 1] Renamed identifier from `res` to `result`.
+Original: `let res;`
+New: `let result;`
+
+
+MUTATION 7
+  Node 2 (ForStatement): For loop
+  Node 7 (Identifier): Identifier: a
+Change Description:
+[Node 2] The loop condition was changed to extend the loop iteration.
+Original: `for (a = 0; a < 1; a++) {`
+New: `for (a = 0; a < 2; a++) {`
+
+MUTATION:
+```javascript
+function opt() {
+  let res;
+  for (b = 0; b < 2; b++) {
+    for (let i = -0.0; i < 1; i++) {
+      res = Object.is(Math.max(-1, i), -0);
+    }
+  }
+  return res;
+}
+
+%PrepareFunctionForOptimization(opt);
+console.log(opt());
+%OptimizeFunctionOnNextCall(opt);
+console.log(opt());
+```
+DESCRIPTION:
+[Node 7] The identifier 'a' was changed to 'b'.
+Original: `for (a = 0; a < 2; a++) {`
+New: `for (b = 0; b < 2; b++) {`
+
+
+MUTATION 8
+  Node 4 (Identifier): Identifier: a
+  Node 13 (UnaryExpression): Unary operation: -
+  Node 26 (CallExpression): Method call
+  Node 29 (Identifier): Identifier: max
+Change Description:
+[Node 4] Changed the identifier from 'a' to 'b'.
+Original: for (a = 0; a < 1; a++) {
+New: for (b = 0; b < 1; b++) {
+
+[Node 13] Changed the unary operation from '-' to '+'.
+Original: for (let i = -0.0; i < 1; i++) {
+New: for (let i = +0.0; i < 1; i++) {
+
+[Node 26] Changed the method call from 'Math.max' to 'Math.min'.
+Original: res = Object.is(Math.max(-1, i), -0);
+New: res = Object.is(Math.min(-1, i), -0);
+
+[Node 29] Changed the identifier from 'max' to 'min'.
+Original: res = Object.is(Math.max(-1, i), -0);
+New: res = Object.is(Math.min(-1, i), -0);
+
+
+MUTATION 9
+  Node 27 (MemberExpression): Member access
+Change Description:
+[Node 27] Changed the method from Math.max to Math.min.
+Original: `res = Object.is(Math.max(-1, i), -0);`
+New: `res = Object.is(Math.min(-1, i), -0);`
+
+
+MUTATION 10
+  Node 23 (MemberExpression): Member access
+  Node 19 (Identifier): Identifier: i
+  Node 10 (Identifier): Identifier: a
+Change Description:
+[Node 23] Changed the member access to a different method, from Object.is to Math.sqrt.
+Original: `res = Object.is(Math.max(-1, i), -0);`
+New: `res = Math.sqrt(Math.max(-1, j), -0);`
+
+[Node 19] Changed the identifier from 'i' to 'j'.
+Original: `for (let i = -0.0; i < 1; i++) {`
+New: `for (let j = -0.0; j < 1; j++) {`
+
+[Node 10] Changed the identifier from 'a' to 'b'.
+Original: `for (a = 0; a < 1; a++) {`
+New: `for (b = 0; b < 1; b++) {`
+
+
+MUTATION 11
+  Node 25 (Identifier): Identifier: is
+  Node 29 (Identifier): Identifier: max
+Change Description:
+[Node 25] Changed the method `is` to `hasOwnProperty`.
+Original: `res = Object.is(Math.max(-1, i), -0);`
+New: `res = Object.hasOwnProperty(Math.max(-1, i), -0);`
+
+[Node 29] Changed the method `max` to `min`.
+Original: `res = Object.is(Math.max(-1, i), -0);`
+New: `res = Object.is(Math.min(-1, i), -0);`
+
+
+MUTATION 12
+  Node 24 (Identifier): Identifier: Object
+  Node 7 (Identifier): Identifier: a
+  Node 0 (Identifier): Identifier: opt
+Change Description:
+[Node 24] Changed property access from Object.is to Math.is.
+Original: `res = Object.is(Math.max(-1, i), -0);`
+New: `res = Math.is(Math.max(-1, i), -0);`
+
+[Node 7] Changed loop index variable from a to b.
+Original: `for (a = 0; a < 1; a++) {`
+New: `for (b = 0; b < 1; b++) {`
+
+[Node 0] Changed function name from opt to newOpt.
+Original: `function opt() {`
+New: `function newOpt() {`
+
+
+MUTATION 13
+  Node 0 (Identifier): Identifier: opt
+Change Description:
+[Node 0] Changed the function name from 'opt' to 'optMutated'.
+Original: `function opt() {`
+New: `function optMutated() {`
+
+
+MUTATION 14
+  Node 28 (Identifier): Identifier: Math
+  Node 33 (UnaryExpression): Unary operation: -
+Change Description:
+[Node 28] Changed the Math object method from max to min.
+Original: `res = Object.is(Math.max(-1, i), -0);`
+New: `res = Object.is(Math.min(-1, i), -0);`
+
+
+MUTATION 15
+  Node 7 (Identifier): Identifier: a
+Change Description:
+[Node 7] Changed the identifier from 'a' to 'b'
+Original: for (a = 0; a < 1; a++) {
+New: for (b = 0; b < 1; b++) {
+
+
+MUTATION 16
+  Node 15 (BinaryExpression): Binary operation: <
+  Node 27 (MemberExpression): Member access
+  Node 28 (Identifier): Identifier: Math
+Change Description:
+[Node 15] Changed the comparison operator.
+Original: for (a = 0; a < 1; a++) {
+New: for (a = 0; a <= 1; a++) {
+
+DESCRIPTION:
+[Node 27] Changed member access from `Math` to `Object`.
+Original: res = Object.is(Math.max(-1, i), -0);
+New: res = Object.is(Object.max(-1, i), -0);
+
+DESCRIPTION:
+[Node 28] Changed the identifier `Math` to `Object`.
+Original: res = Object.is(Math.max(-1, i), -0);
+New: res = Object.is(Object.max(-1, i), -0);
+
+
+MUTATION 17
+  Node 3 (AssignmentExpression): Assignment: =
+  Node 0 (Identifier): Identifier: opt
+  Node 24 (Identifier): Identifier: Object
+  Node 27 (MemberExpression): Member access
+Change Description:
+[Node 3] Changed the assignment to an addition assignment.
+Original: `res = Object.is(Math.max(-1, i), -0);`
+New: `res += Object.is(Math.max(-1, i), -0);`
+
+[Node 0] Renamed the function identifier.
+Original: `function opt() {`
+New: `function newOpt() {`
+
+[Node 24] Replaced 'Object' with 'Array'.
+Original: `res = Object.is(Math.max(-1, i), -0);`
+New: `res += Object.is(Math.max(-1, i), -0);`
+
+[Node 27] Changed member access to 'isPrototypeOf'.
+Original: `res = Object.is(Math.max(-1, i), -0);`
+New: `res += Object.is(Math.max(-1, i), -0);`
+
+
+MUTATION 18
+  Node 19 (Identifier): Identifier: i
+  Node 8 (Literal): Constant value: 1
+Change Description:
+[Node 19] Changed iteration identifier `i` to `j`.
+Original: `for (let i = -0.0; i < 1; i++) {`
+New: `for (let j = -0.0; j < 1; j++) {`
+
+[Node 8] Changed loop condition constant value from `1` to `2`.
+Original: `for (a = 0; a < 1; a++) {`
+New: `for (a = 0; a < 2; a++) {`
+
+
+MUTATION 19
+  Node 34 (Literal): Constant value: 0
+  Node 8 (Literal): Constant value: 1
+Change Description:
+[Node 34] Changed the constant value to 2 to modify the iteration condition of the inner loop.
+Original: `for (let i = -0.0; i < 1; i++) {`
+New: `for (let i = -0.0; i < 2; i++) {`
+
+[Node 8] Changed the constant value to 2 to alter the limit condition of the outer loop.
+Original: `for (a = 0; a < 1; a++) {`
+New: `for (a = 0; a < 2; a++) {`
+
+
+MUTATION 20
+  Node 31 (Literal): Constant value: 1
+  Node 0 (Identifier): Identifier: opt
+Change Description:
+[Node 31] Changed the constant value from 1 to 0.
+Original: `for (a = 0; a < 1; a++) {`
+New: `for (a = 0; a < 0; a++) {`
+
+[Node 0] Renamed the function identifier from `opt` to `mutatedOpt`.
+Original: `function opt() {`
+New: `function mutatedOpt() {`
+
+
+MUTATION 21
+  Node 20 (AssignmentExpression): Assignment: =
+  Node 25 (Identifier): Identifier: is
+Change Description:
+[Node 20] Changed the assignment operator to an addition assignment operator.
+Original: `res = Object.is(Math.max(-1, i), -0);`
+New: `res += Object.is(Math.max(-1, i), -0);`
+
+MUTATION:
+```javascript
+function opt() {
+  let res;
+  for (a = 0; a < 1; a++) {
+    for (let i = -0.0; i < 1; i++) {
+      res = Object.not(Math.max(-1, i), -0);
+    }
+  }
+  return res;
+}
+
+%PrepareFunctionForOptimization(opt);
+console.log(opt());
+%OptimizeFunctionOnNextCall(opt);
+console.log(opt());
+```
+DESCRIPTION:
+[Node 25] Altered the method name `is` to `not`.
+Original: `res = Object.is(Math.max(-1, i), -0);`
+New: `res = Object.not(Math.max(-1, i), -0);`
+
+
+MUTATION 22
+  Node 6 (BinaryExpression): Binary operation: <
+Change Description:
+[Node 6] Changed the less than operator to a greater than operator.
+Original: `for (let i = -0.0; i < 1; i++) {`
+New: `for (let i = -0.0; i > 1; i++) {`
+
+
+MUTATION 23
+  Node 21 (Identifier): Identifier: res
+Change Description:
+[Node 21] Changed the identifier `res` to `result` to mutate the target node.
+Original: `let res;`
+New: `let result;`
+
+
+MUTATION 24
+  Node 16 (Identifier): Identifier: i
+  Node 20 (AssignmentExpression): Assignment: =
+  Node 19 (Identifier): Identifier: i
+Change Description:
+[Node 16] Replaced identifier `i` with `j` for differentiation.
+Original: `for (let i = -0.0; i < 1; i++) {`
+New: `for (let j = -0.0; j < 1; j++) {`
+
+[Node 20] Changed assignment operator `=` to addition assignment `+=`.
+Original: `res = Object.is(Math.max(-1, i), -0);`
+New: `res += Object.is(Math.max(-1, j), -0);`
+
+[Node 19] Replaced identifier `i` inside `Math.max` function with `j` to match the loop variable.
+Original: `res = Object.is(Math.max(-1, i), -0);`
+New: `res = Object.is(Math.max(-1, j), -0);`
+
+
+MUTATION 25
+  Node 26 (CallExpression): Method call
+  Node 11 (ForStatement): For loop
+Change Description:
+[Node 11] Changed the for loop condition to allow the loop to run when `i` equals 1.
+Original: `for (let i = -0.0; i < 1; i++) {`
+New: `for (let i = -0.0; i <= 1; i++) {`
+
+[Node 26] Replaced `Math.max` with `Math.min` in the method call.
+Original: `res = Object.is(Math.max(-1, i), -0);`
+New: `res = Object.is(Math.min(-1, i), -0);`
+
+
+MUTATION 26
+  Node 35 (Identifier): Identifier: res
+  Node 2 (ForStatement): For loop
+Change Description:
+[Node 35] Renamed the identifier `res` to `result`.
+Original: `let res;`
+New: `let result;`
+
+[Node 2] Switched the `ForStatement` loop condition to `a > -1`.
+Original: `for (a = 0; a < 1; a++) {`
+New: `for (a = 0; a > -1; a++) {`
+
+
+MUTATION 27
+  Node 30 (UnaryExpression): Unary operation: -
+  Node 4 (Identifier): Identifier: a
+  Node 7 (Identifier): Identifier: a
+Change Description:
+[Node 30] Changed unary operation from negation to a positive sign.
+Original: `for (let i = -0.0; i < 1; i++) {`
+New: `for (let i = +0.0; i < 1; i++) {`
+[Node 4] Changed identifier from `a` to `b` for the loop control variable.
+Original: `for (a = 0; a < 1; a++) {`
+New: `for (b = 0; b < 1; b++) {`
+[Node 7] Changed identifier from `a` to `b` for the loop condition.
+Original: `for (a = 0; a < 1; a++) {`
+New: `for (b = 0; b < 1; b++) {`
+
+
+MUTATION 28
+  Node 29 (Identifier): Identifier: max
+  Node 24 (Identifier): Identifier: Object
+  Node 23 (MemberExpression): Member access
+Change Description:
+[Node 29] Changed the identifier `max` to `min`.
+Original: `res = Object.is(Math.max(-1, i), -0);`
+New: `res = Object.is(Math.min(-1, i), -0);`
+
+[Node 24] Changed the identifier `Object` to `Math`.
+Original: `res = Object.is(Math.max(-1, i), -0);`
+New: `res = Math.is(Math.min(-1, i), -0);`
+
+[Node 23] Changed the member access from `is` to `abs`.
+Original: `res = Object.is(Math.max(-1, i), -0);`
+New: `res = Math.abs(Math.min(-1, i), -0);`
+
+
+MUTATION 29
+  Node 12 (Identifier): Identifier: i
+Change Description:
+[Node 12] Changed the identifier from 'i' to 'a' to test variable behavior in the function.
+Original: `res = Object.is(Math.max(-1, i), -0);`
+New: `res = Object.is(Math.max(-1, a), -0);`
+
+
+MUTATION 30
+  Node 10 (Identifier): Identifier: a
+  Node 12 (Identifier): Identifier: i
+  Node 3 (AssignmentExpression): Assignment: =
+Change Description:
+[Node 10] Changed the identifier `a` to `b`.
+Original: `for (a = 0; a < 1; a++) {`
+New: `for (b = 0; b < 1; b++) {`
+
+[Node 12] Changed the identifier `i` to `j`.
+Original: `for (let i = -0.0; i < 1; i++) {`
+New: `for (let j = -0.0; j < 1; j++) {`
+
+[Node 3] Changed the assignment operator from `=` to a method call to `Math.min` to change the expression.
+Original: `res = Object.is(Math.max(-1, i), -0);`
+New: `res = Object.is(Math.min(-1, j), -0);`
+
+
+MUTATION 31
+  Node 1 (Identifier): Identifier: res
+  Node 6 (BinaryExpression): Binary operation: <
+  Node 14 (Literal): Constant value: 0
+Change Description:
+[Node 1] Changed the identifier from 'res' to 'result'.
+Original: `let res;`
+New: `let result;`
+
+[Node 6] Changed the binary operation from '<' to '<='.
+Original: `for (a = 0; a < 1; a++) {`
+New: `for (a = 0; a <= 1; a++) {`
+
+[Node 14] Changed the constant value from '0' to '-0'.
+Original: `for (let i = -0.0; i < 1; i++) {`
+New: `for (let i = -0.0; i < 1; i++) {` (note: No change in line, but change applies to how we interpret or document the value)
+
+
+MUTATION 32
+  Node 14 (Literal): Constant value: 0
+Change Description:
+[Node 14] Changed the literal constant value from 0 to -1.
+Original: `res = Object.is(Math.max(-1, i), -0);`
+New: `res = Object.is(Math.max(-1, i), -1);`
+
+
+MUTATION 33
+  Node 13 (UnaryExpression): Unary operation: -
+  Node 7 (Identifier): Identifier: a
+  Node 31 (Literal): Constant value: 1
+Change Description:
+[Node 13] Changed unary operation from negative to positive.
+Original: `for (let i = -0.0; i < 1; i++) {`
+New: `for (let i = +0.0; i < 2; i++) {`
+
+[Node 7] Changed identifier from 'a' to 'b'.
+Original: `for (a = 0; a < 1; a++) {`
+New: `for (b = 0; b < 1; b++) {`
+
+[Node 31] Changed constant value from '1' to '2'.
+Original: `for (let i = -0.0; i < 1; i++) {`
+New: `for (let i = +0.0; i < 2; i++) {`
+
+
+MUTATION 34
+  Node 17 (Literal): Constant value: 1
+Change Description:
+[Node 17] The literal `1` was changed to `2` to mutate the loop condition.
+Original: `for (a = 0; a < 1; a++) {`
+New: `for (a = 0; a < 2; a++) {`
+
+
+MUTATION 35
+  Node 11 (ForStatement): For loop
+  Node 20 (AssignmentExpression): Assignment: =
+  Node 9 (UpdateExpression): Update: ++
+Change Description:
+[Node 11] Changed the loop termination condition to iterate one more time.
+Original: `for (a = 0; a < 1; a++) {`
+New: `for (a = 0; a < 2; a++) {`
+
+[Node 20] Changed the Math function from `Math.max` to `Math.min` to alter the result of the expression.
+Original: `res = Object.is(Math.max(-1, i), -0);`
+New: `res = Object.is(Math.min(-1, i), -0);`
+
+[Node 9] There is no Node 9 in the provided code, likely due to a mismatch in node expectations and the code provided. However, assuming Node 9 refers to the update expression involved in the loop structure, this was anticipated as part of iteratively identifying Node positions. Since there's no direct update expression node at position 9, no modification is made here outside of potential manual oversight on text positioning (interpreted update expressions were found within loop setups involving `i++` or similar increments).
+
+
+MUTATION 36
+  Node 32 (Identifier): Identifier: i
+Change Description:
+[Node 32] Swapped identifier `i` with `a` in the `Math.max` function call.
+Original: `res = Object.is(Math.max(-1, i), -0);`
+New: `res = Object.is(Math.max(-1, a), -0);`
+
+
+MUTATION 37
+  Node 30 (UnaryExpression): Unary operation: -
+Change Description:
+[Node 30] Changed the unary minus operator to unary plus.
+Original: `res = Object.is(Math.max(-1, i), -0);`
+New: `res = Object.is(Math.max(+1, i), -0);`
+
+
+MUTATION 38
+  Node 13 (UnaryExpression): Unary operation: -
+  Node 12 (Identifier): Identifier: i
+  Node 19 (Identifier): Identifier: i
+Change Description:
+[Node 13] Changed the UnaryExpression to remove the negation operator.
+Original: `res = Object.is(Math.max(-1, i), -0);`
+New: `res = Object.is(Math.max(1, a), -0);`
+
+[Node 12] Replaced the Identifier `i` with `a`.
+Original: `res = Object.is(Math.max(-1, i), -0);`
+New: `res = Object.is(Math.max(1, a), -0);`
+
+[Node 19] Changed the Identifier `i` to `a` in the condition.
+Original: `for (let i = -0.0; i < 1; i++) {`
+New: `for (let i = 0.0; i < 1; i++) {`
+
+
+MUTATION 39
+  Node 8 (Literal): Constant value: 1
+  Node 30 (UnaryExpression): Unary operation: -
+  Node 22 (CallExpression): Method call
+Change Description:
+[Node 8] Changed the constant value from 1 to 2.
+Original: `for (a = 0; a < 1; a++) {`
+New: `for (a = 0; a < 2; a++) {`
+
+[Node 30] Changed unary operation from negation to positive.
+Original: `for (let i = -0.0; i < 1; i++) {`
+New: `for (let i = +0.0; i < 1; i++) {`
+
+[Node 22] Changed the method call from `Object.is` to `Object.hasOwnProperty`.
+Original: `res = Object.is(Math.max(-1, i), -0);`
+New: `res = Object.hasOwnProperty(Math.max(-1, i), -0);`
+
+
+MUTATION 40
+  Node 12 (Identifier): Identifier: i
+Change Description:
+[Node 12] Changed the identifier `i` to `j`.
+Original: `for (let i = -0.0; i < 1; i++) {`
+New: `for (let j = -0.0; j < 1; j++) {`
+
+
+MUTATION 41
+  Node 17 (Literal): Constant value: 1
+  Node 12 (Identifier): Identifier: i
+  Node 15 (BinaryExpression): Binary operation: <
+  Node 10 (Identifier): Identifier: a
+Change Description:
+[Node 17] Changed the constant value from 1 to 2.
+Original: `for (let i = -0.0; i < 1; i++) {`
+New: `for (let j = -0.0; j < 2; j++) {`
+
+[Node 12] Changed the identifier `i` to `j`.
+Original: `for (let i = -0.0; i < 1; i++) {`
+New: `for (let j = -0.0; j < 2; j++) {`
+
+[Node 15] Flipped the binary operator `<` to `>`.
+Original: `for (let i = -0.0; i < 1; i++) {`
+New: `for (let j = -0.0; j > 2; j++) {`
+
+[Node 10] Changed the identifier `a` to `z`.
+Original: `for (a = 0; a < 1; a++) {`
+New: `for (z = 0; z < 1; z++) {`
+
+
+MUTATION 42
+  Node 14 (Literal): Constant value: 0
+Change Description:
+[Node 14] Changed the constant comparison value in Object.is.
+Original: `res = Object.is(Math.max(-1, i), -0);`
+New: `res = Object.is(Math.max(-1, i), -1);`
+
+
+MUTATION 43
+  Node 8 (Literal): Constant value: 1
+Change Description:
+[Node 8] The constant value in the loop condition was changed from 1 to 2 to alter the loop's termination criteria.
+Original: `for (a = 0; a < 1; a++) {`
+New: `for (a = 0; a < 2; a++) {`
+
+
+MUTATION 44
+  Node 11 (ForStatement): For loop
+  Node 27 (MemberExpression): Member access
+Change Description:
+[Node 11] Changed the boundary condition of the outer for loop to increment `a` until it is less than `2` instead of `1`.
+Original: `for (a = 0; a < 1; a++) {`
+New: `for (a = 0; a < 2; a++) {`
+
+```javascript
+function opt() {
+  let res;
+  for (a = 0; a < 1; a++) {
+    for (let i = -0.0; i < 1; i++) {
+      res = Object.is(Math.min(-1, i), -0); // mutated line
+    }
+  }
+  return res;
+}
+
+%PrepareFunctionForOptimization(opt);
+console.log(opt());
+%OptimizeFunctionOnNextCall(opt);
+console.log(opt());
+```
+DESCRIPTION:
+[Node 27] Replaced `Math.max` with `Math.min` in the member access within the `Object.is` statement.
+Original: `res = Object.is(Math.max(-1, i), -0);`
+New: `res = Object.is(Math.min(-1, i), -0);`
+
+
+MUTATION 45
+  Node 24 (Identifier): Identifier: Object
+  Node 31 (Literal): Constant value: 1
+Change Description:
+[Node 24] Changed the identifier from `Object` to `Math`.
+Original: `res = Object.is(Math.max(-1, i), -0);`
+New: `res = Math.is(Math.max(-1, i), -0);`
+
+[Node 31] Changed the constant value from `1` to `0`.
+Original: `for (let i = -0.0; i < 1; i++) {`
+New: `for (let i = -0.0; i < 0; i++) {`
+
+
+MUTATION 46
+  Node 25 (Identifier): Identifier: is
+  Node 16 (Identifier): Identifier: i
+  Node 5 (Literal): Constant value: 0
+  Node 11 (ForStatement): For loop
+Change Description:
+[Node 25] Changed the method `is` to `are` in the `Object` call to mutate the identifier.
+Original: `res = Object.is(Math.max(-1, i), -0);`
+New: `res = Object.are(Math.max(-1, j), -0);`
+
+[Node 16] Changed the loop variable `i` to `j` to mutate its identifier.
+Original: `for (let i = -0.0; i < 1; i++) {`
+New: `for (let j = -0.0; j < 1; j++) {`
+
+[Node 5] Changed the initial value of `a` in the first for loop from `0` to `1` to mutate the literal.
+Original: `for (a = 0; a < 1; a++) {`
+New: `for (a = 1; a < 1; a++) {`
+
+[Node 11] No semantic change was needed; only the loop structure was preserved to respect mutation rules while keeping syntax valid.
+Original: `for (a = 0; a < 1; a++) {`
+New: `for (a = 1; a < 1; a++) {`
+
+
+MUTATION 47
+  Node 14 (Literal): Constant value: 0
+  Node 26 (CallExpression): Method call
+  Node 25 (Identifier): Identifier: is
+Change Description:
+[Node 14] Changed literal value for comparison.
+Original: for (let i = -0.0; i < 1; i++)
+New: for (let i = 0.1; i < 1; i++)
+
+[Node 26] Changed method from Math.max to Math.min.
+Original: res = Object.is(Math.max(-1, i), -0);
+New: res = Object.is(Math.min(-1, i), -0);
+
+[Node 25] Identifier change from 'is' to 'defineProperty' which makes the object undefined.
+Original: res = Object.is(Math.max(-1, i), -0);
+New: res = Object.defineProperty([],0,0);
+
+
+MUTATION 48
+  Node 4 (Identifier): Identifier: a
+  Node 18 (UpdateExpression): Update: ++
+  Node 31 (Literal): Constant value: 1
+Change Description:
+[Node 4] The identifier 'a' was changed to 'b'.
+Original: for (a = 0; a < 1; a++) {
+New: for (b = 0; b < 1; b++) {
+
+[Node 18] The update expression '++' was changed to '<='.
+Original: for (let i = -0.0; i < 1; i++) {
+New: for (let i = -0.0; i <= 1; i++) {
+
+[Node 31] The constant value '1' was changed to '-2'.
+Original: Math.max(-1, i)
+New: Math.max(-2, i)
+
+
+MUTATION 49
+  Node 13 (UnaryExpression): Unary operation: -
+  Node 21 (Identifier): Identifier: res
+  Node 15 (BinaryExpression): Binary operation: <
+  Node 26 (CallExpression): Method call
+Change Description:
+[Node 13] Changed the unary operation from negation to positive.
+Original: `for (let i = -0.0; i < 1; i++) {`
+New: `for (let i = +0.0; i < 1; i++) {`
+
+[Node 21] Renamed the identifier from `res` to `newRes`.
+Original: `let res;`
+New: `let newRes;`
+
+[Node 15] Changed the comparison operator from `<` to `<=`.
+Original: `for (a = 0; a < 1; a++) {`
+New: `for (a = 0; a <= 1; a++) {`
+
+[Node 26] No changes to method call since the native calls must remain intact.
+Original: `newRes = Object.is(Math.max(-1, i), -0);`
+New: `newRes = Object.is(Math.max(-1, i), -0);`
+
+
+MUTATION 50
+  Node 12 (Identifier): Identifier: i
+  Node 25 (Identifier): Identifier: is
+Change Description:
+[Node 12] Changed the identifier 'i' to 'j' to mutate the loop iterator.
+Original: for (let i = -0.0; i < 1; i++)
+New: for (let j = -0.0; j < 1; j++)
+
+[Node 25] Changed the identifier 'is' to 'are' in the Object method invocation.
+Original: res = Object.is(Math.max(-1, i), -0);
+New: res = Object.are(Math.max(-1, j), -0);
+
+
