@@ -1,0 +1,2342 @@
+{
+  "NODES": [
+    {
+      "origin": null,
+      "id": 108,
+      "opinfo": "0 v 0 eff 3 ctrl in, 0 v 0 eff 0 ctrl out",
+      "live": true,
+      "properties": "NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 170,
+        "inliningId": -1
+      },
+      "control": true,
+      "label": "End",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": null,
+      "title": "End",
+      "opcode": "End"
+    },
+    {
+      "origin": null,
+      "id": 22,
+      "opinfo": "0 v 1 eff 1 ctrl in, 0 v 0 eff 1 ctrl out",
+      "live": true,
+      "properties": "NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 47,
+        "inliningId": -1
+      },
+      "control": true,
+      "label": "Terminate",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": null,
+      "title": "Terminate",
+      "opcode": "Terminate"
+    },
+    {
+      "origin": null,
+      "id": 48,
+      "opinfo": "0 v 1 eff 1 ctrl in, 0 v 0 eff 1 ctrl out",
+      "live": true,
+      "properties": "NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 84,
+        "inliningId": -1
+      },
+      "control": true,
+      "label": "Terminate",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": null,
+      "title": "Terminate",
+      "opcode": "Terminate"
+    },
+    {
+      "origin": null,
+      "id": 107,
+      "opinfo": "2 v 1 eff 1 ctrl in, 0 v 0 eff 1 ctrl out",
+      "live": true,
+      "properties": "NoThrow",
+      "sourcePosition": {
+        "scriptOffset": 170,
+        "inliningId": -1
+      },
+      "control": true,
+      "label": "Return",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": null,
+      "title": "Return",
+      "opcode": "Return"
+    },
+    {
+      "origin": null,
+      "id": 19,
+      "opinfo": "0 v 2 eff 1 ctrl in, 0 v 1 eff 0 ctrl out",
+      "live": true,
+      "properties": "NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 47,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "EffectPhi",
+      "rankInputs": [
+        0,
+        2
+      ],
+      "rankWithInput": [
+        2
+      ],
+      "type": null,
+      "title": "EffectPhi",
+      "opcode": "EffectPhi"
+    },
+    {
+      "origin": null,
+      "id": 18,
+      "opinfo": "0 v 0 eff 2 ctrl in, 0 v 0 eff 1 ctrl out",
+      "live": true,
+      "properties": "NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 47,
+        "inliningId": -1
+      },
+      "control": true,
+      "label": "Loop",
+      "rankInputs": [
+        0
+      ],
+      "rankWithInput": null,
+      "type": null,
+      "title": "Loop",
+      "opcode": "Loop"
+    },
+    {
+      "origin": null,
+      "id": 44,
+      "opinfo": "0 v 2 eff 1 ctrl in, 0 v 1 eff 0 ctrl out",
+      "live": true,
+      "properties": "NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 84,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "EffectPhi",
+      "rankInputs": [
+        0,
+        2
+      ],
+      "rankWithInput": [
+        2
+      ],
+      "type": null,
+      "title": "EffectPhi",
+      "opcode": "EffectPhi"
+    },
+    {
+      "origin": null,
+      "id": 43,
+      "opinfo": "0 v 0 eff 2 ctrl in, 0 v 0 eff 1 ctrl out",
+      "live": true,
+      "properties": "NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 84,
+        "inliningId": -1
+      },
+      "control": true,
+      "label": "Loop",
+      "rankInputs": [
+        0
+      ],
+      "rankWithInput": null,
+      "type": null,
+      "title": "Loop",
+      "opcode": "Loop"
+    },
+    {
+      "origin": {
+        "nodeId": 107,
+        "reducer": "simplified lowering",
+        "phase": "V8.TFSimplifiedLowering"
+      },
+      "id": 162,
+      "opinfo": "0 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 170,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "Int32Constant[0]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": null,
+      "title": "Int32Constant[0]",
+      "opcode": "Int32Constant"
+    },
+    {
+      "origin": null,
+      "id": 21,
+      "opinfo": "2 v 0 eff 1 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 47,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "Phi[kRepTagged]",
+      "rankInputs": [
+        0,
+        2
+      ],
+      "rankWithInput": [
+        2
+      ],
+      "type": "(Undefined | HeapConstant(0x5c595cd95ba0 {0x21ad0804044d <false>}))",
+      "title": "Phi[kRepTagged]",
+      "opcode": "Phi"
+    },
+    {
+      "origin": {
+        "nodeId": 26,
+        "reducer": "JSNativeContextSpecialization",
+        "phase": "V8.TFInlining"
+      },
+      "id": 115,
+      "opinfo": "2 v 1 eff 1 ctrl in, 1 v 1 eff 0 ctrl out",
+      "live": true,
+      "properties": "NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 47,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "Load[kRepTaggedSigned|kTypeInt32]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": "Signed31",
+      "title": "Load[kRepTaggedSigned|kTypeInt32]",
+      "opcode": "Load"
+    },
+    {
+      "origin": null,
+      "id": 34,
+      "opinfo": "0 v 0 eff 1 ctrl in, 0 v 0 eff 1 ctrl out",
+      "live": true,
+      "properties": "NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 47,
+        "inliningId": -1
+      },
+      "control": true,
+      "label": "IfFalse",
+      "rankInputs": [
+        0
+      ],
+      "rankWithInput": null,
+      "type": null,
+      "title": "IfFalse",
+      "opcode": "IfFalse"
+    },
+    {
+      "origin": {
+        "nodeId": 16,
+        "reducer": "JSNativeContextSpecialization",
+        "phase": "V8.TFInlining"
+      },
+      "id": 114,
+      "opinfo": "3 v 1 eff 1 ctrl in, 0 v 1 eff 0 ctrl out",
+      "live": true,
+      "properties": "NoRead, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 40,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "Store[kRepTaggedSigned, NoWriteBarrier]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": null,
+      "title": "Store[kRepTaggedSigned, NoWriteBarrier]",
+      "opcode": "Store"
+    },
+    {
+      "origin": {
+        "nodeId": 105,
+        "reducer": "JSGenericLowering",
+        "phase": "V8.TFGenericLowering"
+      },
+      "id": 205,
+      "opinfo": "0 v 2 eff 1 ctrl in, 0 v 1 eff 0 ctrl out",
+      "live": true,
+      "properties": "NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 33,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "EffectPhi",
+      "rankInputs": [
+        0,
+        2
+      ],
+      "rankWithInput": [
+        2
+      ],
+      "type": null,
+      "title": "EffectPhi",
+      "opcode": "EffectPhi"
+    },
+    {
+      "origin": {
+        "nodeId": 6,
+        "reducer": "JSGenericLowering",
+        "phase": "V8.TFGenericLowering"
+      },
+      "id": 179,
+      "opinfo": "0 v 0 eff 2 ctrl in, 0 v 0 eff 1 ctrl out",
+      "live": true,
+      "properties": "NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 12,
+        "inliningId": -1
+      },
+      "control": true,
+      "label": "Merge",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": null,
+      "title": "Merge",
+      "opcode": "Merge"
+    },
+    {
+      "origin": {
+        "nodeId": 105,
+        "reducer": "JSGenericLowering",
+        "phase": "V8.TFGenericLowering"
+      },
+      "id": 204,
+      "opinfo": "0 v 0 eff 2 ctrl in, 0 v 0 eff 1 ctrl out",
+      "live": true,
+      "properties": "NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 33,
+        "inliningId": -1
+      },
+      "control": true,
+      "label": "Merge",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": null,
+      "title": "Merge",
+      "opcode": "Merge"
+    },
+    {
+      "origin": null,
+      "id": 33,
+      "opinfo": "1 v 0 eff 1 ctrl in, 0 v 0 eff 2 ctrl out",
+      "live": true,
+      "properties": "NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 47,
+        "inliningId": -1
+      },
+      "control": true,
+      "label": "Branch[None, NoSafetyCheck]",
+      "rankInputs": [
+        0
+      ],
+      "rankWithInput": null,
+      "type": null,
+      "title": "Branch[None, NoSafetyCheck]",
+      "opcode": "Branch"
+    },
+    {
+      "origin": {
+        "nodeId": 152,
+        "reducer": "JSGenericLowering",
+        "phase": "V8.TFGenericLowering"
+      },
+      "id": 190,
+      "opinfo": "0 v 2 eff 1 ctrl in, 0 v 1 eff 0 ctrl out",
+      "live": true,
+      "properties": "NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 63,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "EffectPhi",
+      "rankInputs": [
+        0,
+        2
+      ],
+      "rankWithInput": [
+        2
+      ],
+      "type": null,
+      "title": "EffectPhi",
+      "opcode": "EffectPhi"
+    },
+    {
+      "origin": {
+        "nodeId": 92,
+        "reducer": "JSGenericLowering",
+        "phase": "V8.TFGenericLowering"
+      },
+      "id": 198,
+      "opinfo": "0 v 2 eff 1 ctrl in, 0 v 1 eff 0 ctrl out",
+      "live": true,
+      "properties": "NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 63,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "EffectPhi",
+      "rankInputs": [
+        0,
+        2
+      ],
+      "rankWithInput": [
+        2
+      ],
+      "type": null,
+      "title": "EffectPhi",
+      "opcode": "EffectPhi"
+    },
+    {
+      "origin": {
+        "nodeId": 169,
+        "reducer": "process node",
+        "phase": "V8.TFEffectLinearization"
+      },
+      "id": 214,
+      "opinfo": "2 v 1 eff 1 ctrl in, 0 v 1 eff 1 ctrl out",
+      "live": true,
+      "properties": "NoRead, NoWrite, NoThrow",
+      "sourcePosition": {
+        "scriptOffset": 53,
+        "inliningId": -1
+      },
+      "control": true,
+      "label": "DeoptimizeIf[Eager, LostPrecision, SafetyCheck, FeedbackSource(INVALID)]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": null,
+      "title": "DeoptimizeIf[Eager, LostPrecision, SafetyCheck, FeedbackSource(INVALID)]",
+      "opcode": "DeoptimizeIf"
+    },
+    {
+      "origin": {
+        "nodeId": 92,
+        "reducer": "JSGenericLowering",
+        "phase": "V8.TFGenericLowering"
+      },
+      "id": 192,
+      "opinfo": "2 v 1 eff 1 ctrl in, 1 v 1 eff 0 ctrl out",
+      "live": true,
+      "properties": "NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 63,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "Load[kRepWord64]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": null,
+      "title": "Load[kRepWord64]",
+      "opcode": "Load"
+    },
+    {
+      "origin": {
+        "nodeId": 152,
+        "reducer": "JSGenericLowering",
+        "phase": "V8.TFGenericLowering"
+      },
+      "id": 189,
+      "opinfo": "0 v 0 eff 2 ctrl in, 0 v 0 eff 1 ctrl out",
+      "live": true,
+      "properties": "NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 63,
+        "inliningId": -1
+      },
+      "control": true,
+      "label": "Merge",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": null,
+      "title": "Merge",
+      "opcode": "Merge"
+    },
+    {
+      "origin": {
+        "nodeId": 92,
+        "reducer": "JSGenericLowering",
+        "phase": "V8.TFGenericLowering"
+      },
+      "id": 197,
+      "opinfo": "0 v 0 eff 2 ctrl in, 0 v 0 eff 1 ctrl out",
+      "live": true,
+      "properties": "NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 63,
+        "inliningId": -1
+      },
+      "control": true,
+      "label": "Merge",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": null,
+      "title": "Merge",
+      "opcode": "Merge"
+    },
+    {
+      "origin": null,
+      "id": 47,
+      "opinfo": "2 v 0 eff 1 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 84,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "Phi[kRepFloat64]",
+      "rankInputs": [
+        0,
+        2
+      ],
+      "rankWithInput": [
+        2
+      ],
+      "type": "(MinusZero | Range(1, inf))",
+      "title": "Phi[kRepFloat64]",
+      "opcode": "Phi"
+    },
+    {
+      "origin": null,
+      "id": 53,
+      "opinfo": "1 v 0 eff 1 ctrl in, 0 v 0 eff 2 ctrl out",
+      "live": true,
+      "properties": "NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 84,
+        "inliningId": -1
+      },
+      "control": true,
+      "label": "Branch[None, NoSafetyCheck]",
+      "rankInputs": [
+        0
+      ],
+      "rankWithInput": null,
+      "type": null,
+      "title": "Branch[None, NoSafetyCheck]",
+      "opcode": "Branch"
+    },
+    {
+      "origin": null,
+      "id": 105,
+      "opinfo": "5 v 1 eff 1 ctrl in, 1 v 1 eff 2 ctrl out",
+      "live": true,
+      "properties": "NoWrite",
+      "sourcePosition": {
+        "scriptOffset": 33,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "Call[Code:StackGuard:r1s0i4f1]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": null,
+      "title": "Call[Code:StackGuard:r1s0i4f1]",
+      "opcode": "Call"
+    },
+    {
+      "origin": null,
+      "id": 92,
+      "opinfo": "5 v 1 eff 1 ctrl in, 1 v 1 eff 2 ctrl out",
+      "live": true,
+      "properties": "NoWrite",
+      "sourcePosition": {
+        "scriptOffset": 63,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "Call[Code:StackGuard:r1s0i4f1]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": null,
+      "title": "Call[Code:StackGuard:r1s0i4f1]",
+      "opcode": "Call"
+    },
+    {
+      "origin": {
+        "nodeId": 92,
+        "reducer": "copy nodes",
+        "phase": "V8.TFLoopPeeling"
+      },
+      "id": 152,
+      "opinfo": "5 v 1 eff 1 ctrl in, 1 v 1 eff 2 ctrl out",
+      "live": true,
+      "properties": "NoWrite",
+      "sourcePosition": {
+        "scriptOffset": 63,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "Call[Code:StackGuard:r1s0i4f1]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": null,
+      "title": "Call[Code:StackGuard:r1s0i4f1]",
+      "opcode": "Call"
+    },
+    {
+      "origin": null,
+      "id": 2,
+      "opinfo": "0 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 12,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "HeapConstant[0x21ad0804030d <undefined>]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": "Undefined",
+      "title": "HeapConstant[0x21ad0804030d <undefined>]",
+      "opcode": "HeapConstant"
+    },
+    {
+      "origin": null,
+      "id": 35,
+      "opinfo": "0 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 47,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "HeapConstant[0x21ad0804044d <false>]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": "HeapConstant(0x5c595cd95ba0 {0x21ad0804044d <false>})",
+      "title": "HeapConstant[0x21ad0804044d <false>]",
+      "opcode": "HeapConstant"
+    },
+    {
+      "origin": null,
+      "id": 24,
+      "opinfo": "1 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 47,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "TypedStateValues[kRepTagged|kTypeAny, sparse:^......]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": "Internal",
+      "title": "TypedStateValues[kRepTagged|kTypeAny, sparse:^......]",
+      "opcode": "TypedStateValues"
+    },
+    {
+      "origin": {
+        "nodeId": 16,
+        "reducer": "JSNativeContextSpecialization",
+        "phase": "V8.TFInlining"
+      },
+      "id": 113,
+      "opinfo": "0 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 40,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "HeapConstant[0x21ad08210441 <PropertyCell name=0x21ad08045251 <String[#1]: a> value=1>]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": "HeapConstant(0x5c595cd94710)",
+      "title": "HeapConstant[0x21ad08210441 <PropertyCell name=0x21ad08045251 <String[#1]: a> value=1>]",
+      "opcode": "HeapConstant"
+    },
+    {
+      "origin": null,
+      "id": 221,
+      "opinfo": "0 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": null,
+      "control": false,
+      "label": "Int64Constant[11]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": null,
+      "title": "Int64Constant[11]",
+      "opcode": "Int64Constant"
+    },
+    {
+      "origin": {
+        "nodeId": 117,
+        "reducer": "copy nodes",
+        "phase": "V8.TFLoopPeeling"
+      },
+      "id": 149,
+      "opinfo": "2 v 1 eff 1 ctrl in, 1 v 1 eff 0 ctrl out",
+      "live": true,
+      "properties": "NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 119,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "Load[kRepTaggedPointer|kTypeAny]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": "Any",
+      "title": "Load[kRepTaggedPointer|kTypeAny]",
+      "opcode": "Load"
+    },
+    {
+      "origin": {
+        "nodeId": 166,
+        "reducer": "process node",
+        "phase": "V8.TFEffectLinearization"
+      },
+      "id": 208,
+      "opinfo": "1 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 47,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "TruncateInt64ToInt32",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": null,
+      "title": "TruncateInt64ToInt32",
+      "opcode": "TruncateInt64ToInt32"
+    },
+    {
+      "origin": {
+        "nodeId": 12,
+        "reducer": "simplified lowering",
+        "phase": "V8.TFSimplifiedLowering"
+      },
+      "id": 163,
+      "opinfo": "0 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 38,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "Int64Constant[0]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": null,
+      "title": "Int64Constant[0]",
+      "opcode": "Int64Constant"
+    },
+    {
+      "origin": {
+        "nodeId": 6,
+        "reducer": "JSGenericLowering",
+        "phase": "V8.TFGenericLowering"
+      },
+      "id": 180,
+      "opinfo": "0 v 2 eff 1 ctrl in, 0 v 1 eff 0 ctrl out",
+      "live": true,
+      "properties": "NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 12,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "EffectPhi",
+      "rankInputs": [
+        0,
+        2
+      ],
+      "rankWithInput": [
+        2
+      ],
+      "type": null,
+      "title": "EffectPhi",
+      "opcode": "EffectPhi"
+    },
+    {
+      "origin": {
+        "nodeId": 105,
+        "reducer": "JSGenericLowering",
+        "phase": "V8.TFGenericLowering"
+      },
+      "id": 200,
+      "opinfo": "1 v 1 eff 0 ctrl in, 1 v 1 eff 0 ctrl out",
+      "live": true,
+      "properties": "NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 33,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "StackPointerGreaterThan[JSIterationBody]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": null,
+      "title": "StackPointerGreaterThan[JSIterationBody]",
+      "opcode": "StackPointerGreaterThan"
+    },
+    {
+      "origin": {
+        "nodeId": 6,
+        "reducer": "JSGenericLowering",
+        "phase": "V8.TFGenericLowering"
+      },
+      "id": 177,
+      "opinfo": "0 v 0 eff 1 ctrl in, 0 v 0 eff 1 ctrl out",
+      "live": true,
+      "properties": "NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 12,
+        "inliningId": -1
+      },
+      "control": true,
+      "label": "IfTrue",
+      "rankInputs": [
+        0
+      ],
+      "rankWithInput": null,
+      "type": null,
+      "title": "IfTrue",
+      "opcode": "IfTrue"
+    },
+    {
+      "origin": null,
+      "id": 6,
+      "opinfo": "6 v 1 eff 1 ctrl in, 1 v 1 eff 2 ctrl out",
+      "live": true,
+      "properties": "NoWrite",
+      "sourcePosition": {
+        "scriptOffset": 12,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "Call[Code:StackGuardWithGap:r1s1i5f1]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": null,
+      "title": "Call[Code:StackGuardWithGap:r1s1i5f1]",
+      "opcode": "Call"
+    },
+    {
+      "origin": {
+        "nodeId": 105,
+        "reducer": "JSGenericLowering",
+        "phase": "V8.TFGenericLowering"
+      },
+      "id": 202,
+      "opinfo": "0 v 0 eff 1 ctrl in, 0 v 0 eff 1 ctrl out",
+      "live": true,
+      "properties": "NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 33,
+        "inliningId": -1
+      },
+      "control": true,
+      "label": "IfTrue",
+      "rankInputs": [
+        0
+      ],
+      "rankWithInput": null,
+      "type": null,
+      "title": "IfTrue",
+      "opcode": "IfTrue"
+    },
+    {
+      "origin": {
+        "nodeId": 32,
+        "reducer": "TypedOptimization",
+        "phase": "V8.TFTypedLowering"
+      },
+      "id": 138,
+      "opinfo": "2 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 47,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "Int32LessThan",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": "Boolean",
+      "title": "Int32LessThan",
+      "opcode": "Int32LessThan"
+    },
+    {
+      "origin": null,
+      "id": 40,
+      "opinfo": "0 v 0 eff 1 ctrl in, 0 v 0 eff 1 ctrl out",
+      "live": true,
+      "properties": "NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 47,
+        "inliningId": -1
+      },
+      "control": true,
+      "label": "IfTrue",
+      "rankInputs": [
+        0
+      ],
+      "rankWithInput": null,
+      "type": null,
+      "title": "IfTrue",
+      "opcode": "IfTrue"
+    },
+    {
+      "origin": {
+        "nodeId": 152,
+        "reducer": "JSGenericLowering",
+        "phase": "V8.TFGenericLowering"
+      },
+      "id": 185,
+      "opinfo": "1 v 1 eff 0 ctrl in, 1 v 1 eff 0 ctrl out",
+      "live": true,
+      "properties": "NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 63,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "StackPointerGreaterThan[JSIterationBody]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": null,
+      "title": "StackPointerGreaterThan[JSIterationBody]",
+      "opcode": "StackPointerGreaterThan"
+    },
+    {
+      "origin": {
+        "nodeId": 92,
+        "reducer": "JSGenericLowering",
+        "phase": "V8.TFGenericLowering"
+      },
+      "id": 193,
+      "opinfo": "1 v 1 eff 0 ctrl in, 1 v 1 eff 0 ctrl out",
+      "live": true,
+      "properties": "NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 63,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "StackPointerGreaterThan[JSIterationBody]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": null,
+      "title": "StackPointerGreaterThan[JSIterationBody]",
+      "opcode": "StackPointerGreaterThan"
+    },
+    {
+      "origin": {
+        "nodeId": 169,
+        "reducer": "process node",
+        "phase": "V8.TFEffectLinearization"
+      },
+      "id": 213,
+      "opinfo": "1 v 0 eff 1 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 53,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "Projection[1]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": null,
+      "title": "Projection[1]",
+      "opcode": "Projection"
+    },
+    {
+      "origin": null,
+      "id": 97,
+      "opinfo": "5 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 53,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "FrameState[INTERPRETED_FRAME, 85, Ignore, 0x21ad082100cd <SharedFunctionInfo opt>]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": "Internal",
+      "title": "FrameState[INTERPRETED_FRAME, 85, Ignore, 0x21ad082100cd <SharedFunctionInfo opt>]",
+      "opcode": "FrameState"
+    },
+    {
+      "origin": null,
+      "id": 54,
+      "opinfo": "0 v 0 eff 1 ctrl in, 0 v 0 eff 1 ctrl out",
+      "live": true,
+      "properties": "NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 84,
+        "inliningId": -1
+      },
+      "control": true,
+      "label": "IfFalse",
+      "rankInputs": [
+        0
+      ],
+      "rankWithInput": null,
+      "type": null,
+      "title": "IfFalse",
+      "opcode": "IfFalse"
+    },
+    {
+      "origin": {
+        "nodeId": 103,
+        "reducer": "JSNativeContextSpecialization",
+        "phase": "V8.TFInlining"
+      },
+      "id": 135,
+      "opinfo": "3 v 1 eff 1 ctrl in, 0 v 1 eff 0 ctrl out",
+      "live": true,
+      "properties": "NoRead, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 53,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "Store[kRepTaggedSigned, NoWriteBarrier]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": null,
+      "title": "Store[kRepTaggedSigned, NoWriteBarrier]",
+      "opcode": "Store"
+    },
+    {
+      "origin": {
+        "nodeId": 105,
+        "reducer": "JSGenericLowering",
+        "phase": "V8.TFGenericLowering"
+      },
+      "id": 201,
+      "opinfo": "1 v 0 eff 1 ctrl in, 0 v 0 eff 2 ctrl out",
+      "live": true,
+      "properties": "NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 33,
+        "inliningId": -1
+      },
+      "control": true,
+      "label": "Branch[True, SafetyCheck]",
+      "rankInputs": [
+        0
+      ],
+      "rankWithInput": null,
+      "type": null,
+      "title": "Branch[True, SafetyCheck]",
+      "opcode": "Branch"
+    },
+    {
+      "origin": {
+        "nodeId": 105,
+        "reducer": "JSGenericLowering",
+        "phase": "V8.TFGenericLowering"
+      },
+      "id": 199,
+      "opinfo": "2 v 1 eff 1 ctrl in, 1 v 1 eff 0 ctrl out",
+      "live": true,
+      "properties": "NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 33,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "Load[kRepWord64]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": null,
+      "title": "Load[kRepWord64]",
+      "opcode": "Load"
+    },
+    {
+      "origin": {
+        "nodeId": 169,
+        "reducer": "process node",
+        "phase": "V8.TFEffectLinearization"
+      },
+      "id": 215,
+      "opinfo": "1 v 0 eff 1 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 53,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "Projection[0]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": null,
+      "title": "Projection[0]",
+      "opcode": "Projection"
+    },
+    {
+      "origin": {
+        "nodeId": 6,
+        "reducer": "JSGenericLowering",
+        "phase": "V8.TFGenericLowering"
+      },
+      "id": 173,
+      "opinfo": "0 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 12,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "ExternalConstant[0x21ad00000060]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": null,
+      "title": "ExternalConstant[0x21ad00000060]",
+      "opcode": "ExternalConstant"
+    },
+    {
+      "origin": null,
+      "id": 59,
+      "opinfo": "0 v 0 eff 1 ctrl in, 0 v 0 eff 1 ctrl out",
+      "live": true,
+      "properties": "NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 84,
+        "inliningId": -1
+      },
+      "control": true,
+      "label": "IfTrue",
+      "rankInputs": [
+        0
+      ],
+      "rankWithInput": null,
+      "type": null,
+      "title": "IfTrue",
+      "opcode": "IfTrue"
+    },
+    {
+      "origin": {
+        "nodeId": 152,
+        "reducer": "JSGenericLowering",
+        "phase": "V8.TFGenericLowering"
+      },
+      "id": 187,
+      "opinfo": "0 v 0 eff 1 ctrl in, 0 v 0 eff 1 ctrl out",
+      "live": true,
+      "properties": "NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 63,
+        "inliningId": -1
+      },
+      "control": true,
+      "label": "IfTrue",
+      "rankInputs": [
+        0
+      ],
+      "rankWithInput": null,
+      "type": null,
+      "title": "IfTrue",
+      "opcode": "IfTrue"
+    },
+    {
+      "origin": {
+        "nodeId": 92,
+        "reducer": "JSGenericLowering",
+        "phase": "V8.TFGenericLowering"
+      },
+      "id": 195,
+      "opinfo": "0 v 0 eff 1 ctrl in, 0 v 0 eff 1 ctrl out",
+      "live": true,
+      "properties": "NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 63,
+        "inliningId": -1
+      },
+      "control": true,
+      "label": "IfTrue",
+      "rankInputs": [
+        0
+      ],
+      "rankWithInput": null,
+      "type": null,
+      "title": "IfTrue",
+      "opcode": "IfTrue"
+    },
+    {
+      "origin": {
+        "nodeId": 52,
+        "reducer": "simplified lowering",
+        "phase": "V8.TFSimplifiedLowering"
+      },
+      "id": 165,
+      "opinfo": "0 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 84,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "Float64Constant[1]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": null,
+      "title": "Float64Constant[1]",
+      "opcode": "Float64Constant"
+    },
+    {
+      "origin": {
+        "nodeId": 91,
+        "reducer": "TypedOptimization",
+        "phase": "V8.TFTypedLowering"
+      },
+      "id": 139,
+      "opinfo": "2 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "properties": "Commutative, Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 91,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "Float64Add",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": "Range(1, inf)",
+      "title": "Float64Add",
+      "opcode": "Float64Add"
+    },
+    {
+      "origin": null,
+      "id": 52,
+      "opinfo": "2 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 84,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "Float64LessThanOrEqual",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": "Boolean",
+      "title": "Float64LessThanOrEqual",
+      "opcode": "Float64LessThanOrEqual"
+    },
+    {
+      "origin": {
+        "nodeId": 6,
+        "reducer": "JSGenericLowering",
+        "phase": "V8.TFGenericLowering"
+      },
+      "id": 183,
+      "opinfo": "0 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 12,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "HeapConstant[0x21ad0004aba1 <Code BUILTIN CEntry_Return1_DontSaveFPRegs_ArgvOnStack_NoBuiltinExit>]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": null,
+      "title": "HeapConstant[0x21ad0004aba1 <Code BUILTIN CEntry_Return1_DontSaveFPRegs_ArgvOnStack_NoBuiltinExit>]",
+      "opcode": "HeapConstant"
+    },
+    {
+      "origin": {
+        "nodeId": 152,
+        "reducer": "JSGenericLowering",
+        "phase": "V8.TFGenericLowering"
+      },
+      "id": 191,
+      "opinfo": "0 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 63,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "ExternalConstant[0x5c5934a84cf0<StackGuard.entry>]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": null,
+      "title": "ExternalConstant[0x5c5934a84cf0<StackGuard.entry>]",
+      "opcode": "ExternalConstant"
+    },
+    {
+      "origin": null,
+      "id": 4,
+      "opinfo": "0 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 12,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "HeapConstant[0x21ad08200f51 <NativeContext[263]>]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": "HeapConstant(0x5c595cd88b98)",
+      "title": "HeapConstant[0x21ad08200f51 <NativeContext[263]>]",
+      "opcode": "HeapConstant"
+    },
+    {
+      "origin": null,
+      "id": 106,
+      "opinfo": "5 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 33,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "FrameState[INTERPRETED_FRAME, 93, Ignore, 0x21ad082100cd <SharedFunctionInfo opt>]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": "Internal",
+      "title": "FrameState[INTERPRETED_FRAME, 93, Ignore, 0x21ad082100cd <SharedFunctionInfo opt>]",
+      "opcode": "FrameState"
+    },
+    {
+      "origin": {
+        "nodeId": 105,
+        "reducer": "JSGenericLowering",
+        "phase": "V8.TFGenericLowering"
+      },
+      "id": 203,
+      "opinfo": "0 v 0 eff 1 ctrl in, 0 v 0 eff 1 ctrl out",
+      "live": true,
+      "properties": "NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 33,
+        "inliningId": -1
+      },
+      "control": true,
+      "label": "IfFalse",
+      "rankInputs": [
+        0
+      ],
+      "rankWithInput": null,
+      "type": null,
+      "title": "IfFalse",
+      "opcode": "IfFalse"
+    },
+    {
+      "origin": null,
+      "id": 94,
+      "opinfo": "5 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 63,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "FrameState[INTERPRETED_FRAME, 82, Ignore, 0x21ad082100cd <SharedFunctionInfo opt>]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": "Internal",
+      "title": "FrameState[INTERPRETED_FRAME, 82, Ignore, 0x21ad082100cd <SharedFunctionInfo opt>]",
+      "opcode": "FrameState"
+    },
+    {
+      "origin": {
+        "nodeId": 92,
+        "reducer": "JSGenericLowering",
+        "phase": "V8.TFGenericLowering"
+      },
+      "id": 196,
+      "opinfo": "0 v 0 eff 1 ctrl in, 0 v 0 eff 1 ctrl out",
+      "live": true,
+      "properties": "NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 63,
+        "inliningId": -1
+      },
+      "control": true,
+      "label": "IfFalse",
+      "rankInputs": [
+        0
+      ],
+      "rankWithInput": null,
+      "type": null,
+      "title": "IfFalse",
+      "opcode": "IfFalse"
+    },
+    {
+      "origin": {
+        "nodeId": 94,
+        "reducer": "copy nodes",
+        "phase": "V8.TFLoopPeeling"
+      },
+      "id": 150,
+      "opinfo": "5 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 63,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "FrameState[INTERPRETED_FRAME, 82, Ignore, 0x21ad082100cd <SharedFunctionInfo opt>]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": "Internal",
+      "title": "FrameState[INTERPRETED_FRAME, 82, Ignore, 0x21ad082100cd <SharedFunctionInfo opt>]",
+      "opcode": "FrameState"
+    },
+    {
+      "origin": {
+        "nodeId": 152,
+        "reducer": "JSGenericLowering",
+        "phase": "V8.TFGenericLowering"
+      },
+      "id": 188,
+      "opinfo": "0 v 0 eff 1 ctrl in, 0 v 0 eff 1 ctrl out",
+      "live": true,
+      "properties": "NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 63,
+        "inliningId": -1
+      },
+      "control": true,
+      "label": "IfFalse",
+      "rankInputs": [
+        0
+      ],
+      "rankWithInput": null,
+      "type": null,
+      "title": "IfFalse",
+      "opcode": "IfFalse"
+    },
+    {
+      "origin": null,
+      "id": 96,
+      "opinfo": "1 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 53,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "TypedStateValues[kRepTagged|kTypeAny, sparse:^......]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": "Internal",
+      "title": "TypedStateValues[kRepTagged|kTypeAny, sparse:^......]",
+      "opcode": "TypedStateValues"
+    },
+    {
+      "origin": {
+        "nodeId": 93,
+        "reducer": "copy nodes",
+        "phase": "V8.TFLoopPeeling"
+      },
+      "id": 151,
+      "opinfo": "2 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 63,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "TypedStateValues[kRepTagged|kTypeAny, kRepTagged|kTypeAny, sparse:^^.....]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": "Internal",
+      "title": "TypedStateValues[kRepTagged|kTypeAny, kRepTagged|kTypeAny, sparse:^^.....]",
+      "opcode": "TypedStateValues"
+    },
+    {
+      "origin": null,
+      "id": 93,
+      "opinfo": "2 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 63,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "TypedStateValues[kRepTagged|kTypeAny, kRepFloat64|kTypeAny, sparse:^^.....]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": "Internal",
+      "title": "TypedStateValues[kRepTagged|kTypeAny, kRepFloat64|kTypeAny, sparse:^^.....]",
+      "opcode": "TypedStateValues"
+    },
+    {
+      "origin": null,
+      "id": 25,
+      "opinfo": "5 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 47,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "FrameState[INTERPRETED_FRAME, 7, Ignore, 0x21ad082100cd <SharedFunctionInfo opt>]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": "Internal",
+      "title": "FrameState[INTERPRETED_FRAME, 7, Ignore, 0x21ad082100cd <SharedFunctionInfo opt>]",
+      "opcode": "FrameState"
+    },
+    {
+      "origin": {
+        "nodeId": 60,
+        "reducer": "JSNativeContextSpecialization",
+        "phase": "V8.TFInlining"
+      },
+      "id": 116,
+      "opinfo": "0 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 103,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "HeapConstant[0x21ad082013c9 <JSFunction Object (sfi = 0x21ad08182461)>]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": "HeapConstant(0x5c595cd8bf48)",
+      "title": "HeapConstant[0x21ad082013c9 <JSFunction Object (sfi = 0x21ad08182461)>]",
+      "opcode": "HeapConstant"
+    },
+    {
+      "origin": null,
+      "id": 222,
+      "opinfo": "0 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": null,
+      "control": false,
+      "label": "Int64Constant[3]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": null,
+      "title": "Int64Constant[3]",
+      "opcode": "Int64Constant"
+    },
+    {
+      "origin": {
+        "nodeId": 118,
+        "reducer": "copy nodes",
+        "phase": "V8.TFLoopPeeling"
+      },
+      "id": 148,
+      "opinfo": "2 v 1 eff 1 ctrl in, 1 v 1 eff 0 ctrl out",
+      "live": true,
+      "properties": "NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 119,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "Load[kRepTagged|kTypeAny]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": "NonInternal",
+      "title": "Load[kRepTagged|kTypeAny]",
+      "opcode": "Load"
+    },
+    {
+      "origin": {
+        "nodeId": 166,
+        "reducer": "process node",
+        "phase": "V8.TFEffectLinearization"
+      },
+      "id": 209,
+      "opinfo": "2 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 47,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "Word32Sar",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": null,
+      "title": "Word32Sar",
+      "opcode": "Word32Sar"
+    },
+    {
+      "origin": {
+        "nodeId": 152,
+        "reducer": "JSGenericLowering",
+        "phase": "V8.TFGenericLowering"
+      },
+      "id": 184,
+      "opinfo": "2 v 1 eff 1 ctrl in, 1 v 1 eff 0 ctrl out",
+      "live": true,
+      "properties": "NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 63,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "Load[kRepWord64]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": null,
+      "title": "Load[kRepWord64]",
+      "opcode": "Load"
+    },
+    {
+      "origin": {
+        "nodeId": 6,
+        "reducer": "JSGenericLowering",
+        "phase": "V8.TFGenericLowering"
+      },
+      "id": 174,
+      "opinfo": "2 v 1 eff 1 ctrl in, 1 v 1 eff 0 ctrl out",
+      "live": true,
+      "properties": "NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 12,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "Load[kRepWord64]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": null,
+      "title": "Load[kRepWord64]",
+      "opcode": "Load"
+    },
+    {
+      "origin": {
+        "nodeId": 6,
+        "reducer": "JSGenericLowering",
+        "phase": "V8.TFGenericLowering"
+      },
+      "id": 175,
+      "opinfo": "1 v 1 eff 0 ctrl in, 1 v 1 eff 0 ctrl out",
+      "live": true,
+      "properties": "NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 12,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "StackPointerGreaterThan[JSFunctionEntry]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": null,
+      "title": "StackPointerGreaterThan[JSFunctionEntry]",
+      "opcode": "StackPointerGreaterThan"
+    },
+    {
+      "origin": {
+        "nodeId": 6,
+        "reducer": "JSGenericLowering",
+        "phase": "V8.TFGenericLowering"
+      },
+      "id": 176,
+      "opinfo": "1 v 0 eff 1 ctrl in, 0 v 0 eff 2 ctrl out",
+      "live": true,
+      "properties": "NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 12,
+        "inliningId": -1
+      },
+      "control": true,
+      "label": "Branch[True, SafetyCheck]",
+      "rankInputs": [
+        0
+      ],
+      "rankWithInput": null,
+      "type": null,
+      "title": "Branch[True, SafetyCheck]",
+      "opcode": "Branch"
+    },
+    {
+      "origin": {
+        "nodeId": 6,
+        "reducer": "JSGenericLowering",
+        "phase": "V8.TFGenericLowering"
+      },
+      "id": 181,
+      "opinfo": "0 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 12,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "LoadStackCheckOffset",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": null,
+      "title": "LoadStackCheckOffset",
+      "opcode": "LoadStackCheckOffset"
+    },
+    {
+      "origin": {
+        "nodeId": 6,
+        "reducer": "JSGenericLowering",
+        "phase": "V8.TFGenericLowering"
+      },
+      "id": 182,
+      "opinfo": "0 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 12,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "ExternalConstant[0x5c5934a851b0<StackGuardWithGap.entry>]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": null,
+      "title": "ExternalConstant[0x5c5934a851b0<StackGuardWithGap.entry>]",
+      "opcode": "ExternalConstant"
+    },
+    {
+      "origin": {
+        "nodeId": 138,
+        "reducer": "simplified lowering",
+        "phase": "V8.TFSimplifiedLowering"
+      },
+      "id": 167,
+      "opinfo": "0 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 47,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "Int32Constant[1]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": null,
+      "title": "Int32Constant[1]",
+      "opcode": "Int32Constant"
+    },
+    {
+      "origin": null,
+      "id": 11,
+      "opinfo": "5 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 12,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "FrameState[INTERPRETED_FRAME, -1, Ignore, 0x21ad082100cd <SharedFunctionInfo opt>]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": "Internal",
+      "title": "FrameState[INTERPRETED_FRAME, -1, Ignore, 0x21ad082100cd <SharedFunctionInfo opt>]",
+      "opcode": "FrameState"
+    },
+    {
+      "origin": {
+        "nodeId": 6,
+        "reducer": "JSGenericLowering",
+        "phase": "V8.TFGenericLowering"
+      },
+      "id": 178,
+      "opinfo": "0 v 0 eff 1 ctrl in, 0 v 0 eff 1 ctrl out",
+      "live": true,
+      "properties": "NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 12,
+        "inliningId": -1
+      },
+      "control": true,
+      "label": "IfFalse",
+      "rankInputs": [
+        0
+      ],
+      "rankWithInput": null,
+      "type": null,
+      "title": "IfFalse",
+      "opcode": "IfFalse"
+    },
+    {
+      "origin": {
+        "nodeId": 121,
+        "reducer": "copy nodes",
+        "phase": "V8.TFLoopPeeling"
+      },
+      "id": 146,
+      "opinfo": "2 v 1 eff 1 ctrl in, 1 v 1 eff 0 ctrl out",
+      "live": true,
+      "properties": "NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 127,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "Load[kRepTagged|kTypeAny]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": "NonInternal",
+      "title": "Load[kRepTagged|kTypeAny]",
+      "opcode": "Load"
+    },
+    {
+      "origin": {
+        "nodeId": 120,
+        "reducer": "copy nodes",
+        "phase": "V8.TFLoopPeeling"
+      },
+      "id": 147,
+      "opinfo": "2 v 1 eff 1 ctrl in, 1 v 1 eff 0 ctrl out",
+      "live": true,
+      "properties": "NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 127,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "Load[kRepTaggedPointer|kTypeAny]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": "Any",
+      "title": "Load[kRepTaggedPointer|kTypeAny]",
+      "opcode": "Load"
+    },
+    {
+      "origin": {
+        "nodeId": 144,
+        "reducer": "process node",
+        "phase": "V8.TFEffectLinearization"
+      },
+      "id": 210,
+      "opinfo": "2 v 1 eff 1 ctrl in, 0 v 1 eff 1 ctrl out",
+      "live": true,
+      "properties": "NoRead, NoWrite, NoThrow",
+      "sourcePosition": {
+        "scriptOffset": 127,
+        "inliningId": -1
+      },
+      "control": true,
+      "label": "DeoptimizeUnless[Eager, WrongCallTarget, SafetyCheck, FeedbackSource(INVALID)]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": null,
+      "title": "DeoptimizeUnless[Eager, WrongCallTarget, SafetyCheck, FeedbackSource(INVALID)]",
+      "opcode": "DeoptimizeUnless"
+    },
+    {
+      "origin": {
+        "nodeId": 152,
+        "reducer": "JSGenericLowering",
+        "phase": "V8.TFGenericLowering"
+      },
+      "id": 186,
+      "opinfo": "1 v 0 eff 1 ctrl in, 0 v 0 eff 2 ctrl out",
+      "live": true,
+      "properties": "NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 63,
+        "inliningId": -1
+      },
+      "control": true,
+      "label": "Branch[True, SafetyCheck]",
+      "rankInputs": [
+        0
+      ],
+      "rankWithInput": null,
+      "type": null,
+      "title": "Branch[True, SafetyCheck]",
+      "opcode": "Branch"
+    },
+    {
+      "origin": {
+        "nodeId": 92,
+        "reducer": "JSGenericLowering",
+        "phase": "V8.TFGenericLowering"
+      },
+      "id": 194,
+      "opinfo": "1 v 0 eff 1 ctrl in, 0 v 0 eff 2 ctrl out",
+      "live": true,
+      "properties": "NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 63,
+        "inliningId": -1
+      },
+      "control": true,
+      "label": "Branch[True, SafetyCheck]",
+      "rankInputs": [
+        0
+      ],
+      "rankWithInput": null,
+      "type": null,
+      "title": "Branch[True, SafetyCheck]",
+      "opcode": "Branch"
+    },
+    {
+      "origin": {
+        "nodeId": 169,
+        "reducer": "process node",
+        "phase": "V8.TFEffectLinearization"
+      },
+      "id": 212,
+      "opinfo": "2 v 0 eff 1 ctrl in, 2 v 0 eff 0 ctrl out",
+      "live": true,
+      "properties": "Commutative, Associative, NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 53,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "Int32AddWithOverflow",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": null,
+      "title": "Int32AddWithOverflow",
+      "opcode": "Int32AddWithOverflow"
+    },
+    {
+      "origin": null,
+      "id": 7,
+      "opinfo": "1 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 12,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "TypedStateValues[kRepTagged|kTypeAny, dense]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": "Internal",
+      "title": "TypedStateValues[kRepTagged|kTypeAny, dense]",
+      "opcode": "TypedStateValues"
+    },
+    {
+      "origin": {
+        "nodeId": 106,
+        "reducer": "simplified lowering",
+        "phase": "V8.TFSimplifiedLowering"
+      },
+      "id": 164,
+      "opinfo": "0 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 33,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "TypedStateValues[, sparse:.]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": null,
+      "title": "TypedStateValues[, sparse:.]",
+      "opcode": "TypedStateValues"
+    },
+    {
+      "origin": null,
+      "id": 3,
+      "opinfo": "1 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 12,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "Parameter[3, debug name: %context]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": "OtherInternal",
+      "title": "Parameter[3, debug name: %context]",
+      "opcode": "Parameter"
+    },
+    {
+      "origin": {
+        "nodeId": 10,
+        "reducer": "JSContextSpecialization",
+        "phase": "V8.TFInlining"
+      },
+      "id": 111,
+      "opinfo": "0 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 12,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "HeapConstant[0x21ad08210225 <JSFunction opt (sfi = 0x21ad082100cd)>]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": "HeapConstant(0x5c595cd94738)",
+      "title": "HeapConstant[0x21ad08210225 <JSFunction opt (sfi = 0x21ad082100cd)>]",
+      "opcode": "HeapConstant"
+    },
+    {
+      "origin": null,
+      "id": 0,
+      "opinfo": "0 v 0 eff 0 ctrl in, 5 v 1 eff 1 ctrl out",
+      "live": true,
+      "properties": "NoRead, NoWrite, NoThrow",
+      "sourcePosition": {
+        "scriptOffset": 12,
+        "inliningId": -1
+      },
+      "control": true,
+      "label": "Start",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": "Internal",
+      "title": "Start",
+      "opcode": "Start"
+    },
+    {
+      "origin": {
+        "nodeId": 169,
+        "reducer": "process node",
+        "phase": "V8.TFEffectLinearization"
+      },
+      "id": 216,
+      "opinfo": "1 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 53,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "BitcastWord32ToWord64",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": null,
+      "title": "BitcastWord32ToWord64",
+      "opcode": "BitcastWord32ToWord64"
+    },
+    {
+      "origin": {
+        "nodeId": 28,
+        "reducer": "simplified lowering",
+        "phase": "V8.TFSimplifiedLowering"
+      },
+      "id": 170,
+      "opinfo": "0 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 47,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "Int64Constant[2]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": null,
+      "title": "Int64Constant[2]",
+      "opcode": "Int64Constant"
+    },
+    {
+      "origin": {
+        "nodeId": 142,
+        "reducer": "process node",
+        "phase": "V8.TFEffectLinearization"
+      },
+      "id": 211,
+      "opinfo": "2 v 1 eff 1 ctrl in, 0 v 1 eff 1 ctrl out",
+      "live": true,
+      "properties": "NoRead, NoWrite, NoThrow",
+      "sourcePosition": {
+        "scriptOffset": 119,
+        "inliningId": -1
+      },
+      "control": true,
+      "label": "DeoptimizeUnless[Eager, WrongCallTarget, SafetyCheck, FeedbackSource(INVALID)]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": null,
+      "title": "DeoptimizeUnless[Eager, WrongCallTarget, SafetyCheck, FeedbackSource(INVALID)]",
+      "opcode": "DeoptimizeUnless"
+    },
+    {
+      "origin": null,
+      "id": 223,
+      "opinfo": "0 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": null,
+      "control": false,
+      "label": "Int64Constant[27]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": null,
+      "title": "Int64Constant[27]",
+      "opcode": "Int64Constant"
+    },
+    {
+      "origin": {
+        "nodeId": 130,
+        "reducer": "copy nodes",
+        "phase": "V8.TFLoopPeeling"
+      },
+      "id": 143,
+      "opinfo": "2 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "properties": "Commutative, Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 119,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "Word32Equal",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": "Boolean",
+      "title": "Word32Equal",
+      "opcode": "Word32Equal"
+    },
+    {
+      "origin": null,
+      "id": 102,
+      "opinfo": "2 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "properties": "Commutative, Associative, Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 53,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "Int32Add",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": "Range(-1073741823, 1073741824)",
+      "title": "Int32Add",
+      "opcode": "Int32Add"
+    },
+    {
+      "origin": null,
+      "id": 8,
+      "opinfo": "0 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 12,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "TypedStateValues[, sparse:.......]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": "Internal",
+      "title": "TypedStateValues[, sparse:.......]",
+      "opcode": "TypedStateValues"
+    },
+    {
+      "origin": null,
+      "id": 224,
+      "opinfo": "0 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": null,
+      "control": false,
+      "label": "Int64Constant[83]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": null,
+      "title": "Int64Constant[83]",
+      "opcode": "Int64Constant"
+    },
+    {
+      "origin": {
+        "nodeId": 123,
+        "reducer": "copy nodes",
+        "phase": "V8.TFLoopPeeling"
+      },
+      "id": 145,
+      "opinfo": "2 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "properties": "Commutative, Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 127,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "Word32Equal",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": "Boolean",
+      "title": "Word32Equal",
+      "opcode": "Word32Equal"
+    },
+    {
+      "origin": {
+        "nodeId": 71,
+        "reducer": "JSNativeContextSpecialization",
+        "phase": "V8.TFInlining"
+      },
+      "id": 119,
+      "opinfo": "0 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 122,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "HeapConstant[0x21ad08203ca9 <Object map = 0x21ad08240a09>]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": "HeapConstant(0x5c595cd94d08)",
+      "title": "HeapConstant[0x21ad08203ca9 <Object map = 0x21ad08240a09>]",
+      "opcode": "HeapConstant"
+    },
+    {
+      "origin": null,
+      "id": 1,
+      "opinfo": "1 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 12,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "Parameter[0, debug name: %this]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": "Receiver",
+      "title": "Parameter[0, debug name: %this]",
+      "opcode": "Parameter"
+    },
+    {
+      "origin": {
+        "nodeId": 86,
+        "reducer": "JSCallReducer",
+        "phase": "V8.TFInlining"
+      },
+      "id": 129,
+      "opinfo": "0 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 119,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "HeapConstant[0x21ad082018a9 <JSFunction is (sfi = 0x21ad081821e1)>]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": "HeapConstant(0x5c595cd951a0)",
+      "title": "HeapConstant[0x21ad082018a9 <JSFunction is (sfi = 0x21ad081821e1)>]",
+      "opcode": "HeapConstant"
+    },
+    {
+      "origin": {
+        "nodeId": 81,
+        "reducer": "JSCallReducer",
+        "phase": "V8.TFInlining"
+      },
+      "id": 122,
+      "opinfo": "0 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "sourcePosition": {
+        "scriptOffset": 127,
+        "inliningId": -1
+      },
+      "control": false,
+      "label": "HeapConstant[0x21ad082041a9 <JSFunction max (sfi = 0x21ad081843e1)>]",
+      "rankInputs": null,
+      "rankWithInput": null,
+      "type": "HeapConstant(0x5c595cd95700)",
+      "title": "HeapConstant[0x21ad082041a9 <JSFunction max (sfi = 0x21ad081843e1)>]",
+      "opcode": "HeapConstant"
+    }
+  ],
+  "EDGES": [
+    {
+      "from": 0,
+      "to": 97,
+      "kind": "frame-state"
+    },
+    {
+      "from": 0,
+      "to": 106,
+      "kind": "frame-state"
+    },
+    {
+      "from": 0,
+      "to": 94,
+      "kind": "frame-state"
+    },
+    {
+      "from": 0,
+      "to": 150,
+      "kind": "frame-state"
+    },
+    {
+      "from": 0,
+      "to": 25,
+      "kind": "frame-state"
+    },
+    {
+      "from": 0,
+      "to": 11,
+      "kind": "frame-state"
+    }
+  ],
+  "KIND": [
+    "frame-state"
+  ],
+  "similarity": 0.908256880733945
+}
