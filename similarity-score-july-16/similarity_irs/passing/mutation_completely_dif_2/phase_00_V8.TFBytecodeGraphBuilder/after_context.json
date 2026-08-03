@@ -1,0 +1,1095 @@
+{
+  "NODES": [
+    {
+      "rankInputs": null,
+      "type": null,
+      "properties": "NoRead, NoWrite, NoThrow, NoDeopt",
+      "label": "End",
+      "origin": null,
+      "opinfo": "0 v 0 eff 2 ctrl in, 0 v 0 eff 0 ctrl out",
+      "live": true,
+      "title": "End",
+      "control": true,
+      "opcode": "End",
+      "id": 60,
+      "rankWithInput": null,
+      "sourcePosition": {
+        "scriptOffset": 169,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": null,
+      "type": null,
+      "properties": "NoRead, NoWrite, NoThrow, NoDeopt",
+      "label": "Terminate",
+      "origin": null,
+      "opinfo": "0 v 1 eff 1 ctrl in, 0 v 0 eff 1 ctrl out",
+      "live": true,
+      "title": "Terminate",
+      "control": true,
+      "opcode": "Terminate",
+      "id": 20,
+      "rankWithInput": null,
+      "sourcePosition": {
+        "scriptOffset": 79,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": null,
+      "type": null,
+      "properties": "NoThrow",
+      "label": "Return",
+      "origin": null,
+      "opinfo": "2 v 1 eff 1 ctrl in, 0 v 0 eff 1 ctrl out",
+      "live": true,
+      "title": "Return",
+      "control": true,
+      "opcode": "Return",
+      "id": 59,
+      "rankWithInput": null,
+      "sourcePosition": {
+        "scriptOffset": 169,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": [
+        0,
+        2
+      ],
+      "type": null,
+      "properties": "NoRead, NoWrite, NoThrow, NoDeopt",
+      "label": "EffectPhi",
+      "origin": null,
+      "opinfo": "0 v 2 eff 1 ctrl in, 0 v 1 eff 0 ctrl out",
+      "live": true,
+      "title": "EffectPhi",
+      "control": false,
+      "opcode": "EffectPhi",
+      "id": 16,
+      "rankWithInput": [
+        2
+      ],
+      "sourcePosition": {
+        "scriptOffset": 79,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": [
+        0
+      ],
+      "type": null,
+      "properties": "NoRead, NoWrite, NoThrow, NoDeopt",
+      "label": "Loop",
+      "origin": null,
+      "opinfo": "0 v 0 eff 2 ctrl in, 0 v 0 eff 1 ctrl out",
+      "live": true,
+      "title": "Loop",
+      "control": true,
+      "opcode": "Loop",
+      "id": 15,
+      "rankWithInput": null,
+      "sourcePosition": {
+        "scriptOffset": 79,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": null,
+      "type": null,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "label": "NumberConstant[0]",
+      "origin": null,
+      "opinfo": "0 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "title": "NumberConstant[0]",
+      "control": false,
+      "opcode": "NumberConstant",
+      "id": 14,
+      "rankWithInput": null,
+      "sourcePosition": {
+        "scriptOffset": 70,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": null,
+      "type": null,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "label": "LoopExitValue",
+      "origin": null,
+      "opinfo": "1 v 0 eff 1 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "title": "LoopExitValue",
+      "control": false,
+      "opcode": "LoopExitValue",
+      "id": 34,
+      "rankWithInput": null,
+      "sourcePosition": {
+        "scriptOffset": 75,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": null,
+      "type": null,
+      "properties": "NoThrow",
+      "label": "LoopExitEffect",
+      "origin": null,
+      "opinfo": "0 v 1 eff 1 ctrl in, 0 v 1 eff 0 ctrl out",
+      "live": true,
+      "title": "LoopExitEffect",
+      "control": false,
+      "opcode": "LoopExitEffect",
+      "id": 33,
+      "rankWithInput": null,
+      "sourcePosition": {
+        "scriptOffset": 75,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": null,
+      "type": null,
+      "properties": "NoRead, NoWrite, NoThrow, NoDeopt",
+      "label": "Merge",
+      "origin": null,
+      "opinfo": "0 v 0 eff 1 ctrl in, 0 v 0 eff 1 ctrl out",
+      "live": true,
+      "title": "Merge",
+      "control": true,
+      "opcode": "Merge",
+      "id": 35,
+      "rankWithInput": null,
+      "sourcePosition": {
+        "scriptOffset": 75,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": null,
+      "type": null,
+      "properties": "NoWrite",
+      "label": "JSStackCheck[JSFunctionEntry]",
+      "origin": null,
+      "opinfo": "0 v 1 eff 1 ctrl in, 0 v 1 eff 2 ctrl out",
+      "live": true,
+      "title": "JSStackCheck[JSFunctionEntry]",
+      "control": false,
+      "opcode": "JSStackCheck",
+      "id": 6,
+      "rankWithInput": null,
+      "sourcePosition": {
+        "scriptOffset": 12,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": null,
+      "type": null,
+      "properties": "NoWrite",
+      "label": "JSStackCheck[JSIterationBody]",
+      "origin": null,
+      "opinfo": "0 v 1 eff 1 ctrl in, 0 v 1 eff 2 ctrl out",
+      "live": true,
+      "title": "JSStackCheck[JSIterationBody]",
+      "control": false,
+      "opcode": "JSStackCheck",
+      "id": 56,
+      "rankWithInput": null,
+      "sourcePosition": {
+        "scriptOffset": 57,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": null,
+      "type": null,
+      "properties": "NoRead, NoWrite, NoThrow, NoDeopt",
+      "label": "Checkpoint",
+      "origin": null,
+      "opinfo": "0 v 1 eff 1 ctrl in, 0 v 1 eff 0 ctrl out",
+      "live": true,
+      "title": "Checkpoint",
+      "control": false,
+      "opcode": "Checkpoint",
+      "id": 21,
+      "rankWithInput": null,
+      "sourcePosition": {
+        "scriptOffset": 79,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": [
+        0,
+        2
+      ],
+      "type": null,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "label": "Phi[kRepTagged]",
+      "origin": null,
+      "opinfo": "2 v 0 eff 1 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "title": "Phi[kRepTagged]",
+      "control": false,
+      "opcode": "Phi",
+      "id": 19,
+      "rankWithInput": [
+        2
+      ],
+      "sourcePosition": {
+        "scriptOffset": 79,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": [
+        0,
+        2
+      ],
+      "type": null,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "label": "Phi[kRepTagged]",
+      "origin": null,
+      "opinfo": "2 v 0 eff 1 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "title": "Phi[kRepTagged]",
+      "control": false,
+      "opcode": "Phi",
+      "id": 18,
+      "rankWithInput": [
+        2
+      ],
+      "sourcePosition": {
+        "scriptOffset": 79,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": [
+        0,
+        2
+      ],
+      "type": null,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "label": "Phi[kRepTagged]",
+      "origin": null,
+      "opinfo": "2 v 0 eff 1 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "title": "Phi[kRepTagged]",
+      "control": false,
+      "opcode": "Phi",
+      "id": 17,
+      "rankWithInput": [
+        2
+      ],
+      "sourcePosition": {
+        "scriptOffset": 79,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": null,
+      "type": null,
+      "properties": "NoRead, NoWrite, NoThrow, NoDeopt",
+      "label": "LoopExit",
+      "origin": null,
+      "opinfo": "0 v 0 eff 2 ctrl in, 0 v 0 eff 1 ctrl out",
+      "live": true,
+      "title": "LoopExit",
+      "control": false,
+      "opcode": "LoopExit",
+      "id": 32,
+      "rankWithInput": null,
+      "sourcePosition": {
+        "scriptOffset": 75,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": null,
+      "type": null,
+      "properties": "",
+      "label": "JSLoadNamed[0x2c2e080425a5 <String[#6]: length>, sloppy]",
+      "origin": null,
+      "opinfo": "1 v 1 eff 1 ctrl in, 1 v 1 eff 2 ctrl out",
+      "live": true,
+      "title": "JSLoadNamed[0x2c2e080425a5 <String[#6]: length>, sloppy]",
+      "control": false,
+      "opcode": "JSLoadNamed",
+      "id": 24,
+      "rankWithInput": null,
+      "sourcePosition": {
+        "scriptOffset": 79,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": null,
+      "type": null,
+      "properties": "NoRead, NoWrite, NoThrow",
+      "label": "SpeculativeNumberLessThan[SignedSmall]",
+      "origin": null,
+      "opinfo": "2 v 1 eff 1 ctrl in, 1 v 1 eff 0 ctrl out",
+      "live": true,
+      "title": "SpeculativeNumberLessThan[SignedSmall]",
+      "control": false,
+      "opcode": "SpeculativeNumberLessThan",
+      "id": 28,
+      "rankWithInput": null,
+      "sourcePosition": {
+        "scriptOffset": 75,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": null,
+      "type": null,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "label": "HeapConstant[0x2c2e08200f51 <NativeContext[263]>]",
+      "origin": null,
+      "opinfo": "0 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "title": "HeapConstant[0x2c2e08200f51 <NativeContext[263]>]",
+      "control": false,
+      "opcode": "HeapConstant",
+      "id": 4,
+      "rankWithInput": null,
+      "sourcePosition": {
+        "scriptOffset": 12,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": null,
+      "type": null,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "label": "FrameState[INTERPRETED_FRAME, -1, Ignore, 0x2c2e082100e9 <SharedFunctionInfo opt>]",
+      "origin": null,
+      "opinfo": "5 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "title": "FrameState[INTERPRETED_FRAME, -1, Ignore, 0x2c2e082100e9 <SharedFunctionInfo opt>]",
+      "control": false,
+      "opcode": "FrameState",
+      "id": 11,
+      "rankWithInput": null,
+      "sourcePosition": {
+        "scriptOffset": 12,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": null,
+      "type": null,
+      "properties": "NoRead, NoWrite, NoThrow",
+      "label": "Start",
+      "origin": null,
+      "opinfo": "0 v 0 eff 0 ctrl in, 5 v 1 eff 1 ctrl out",
+      "live": true,
+      "title": "Start",
+      "control": true,
+      "opcode": "Start",
+      "id": 0,
+      "rankWithInput": null,
+      "sourcePosition": {
+        "scriptOffset": 12,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": null,
+      "type": null,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "label": "FrameState[INTERPRETED_FRAME, 46, Ignore, 0x2c2e082100e9 <SharedFunctionInfo opt>]",
+      "origin": null,
+      "opinfo": "5 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "title": "FrameState[INTERPRETED_FRAME, 46, Ignore, 0x2c2e082100e9 <SharedFunctionInfo opt>]",
+      "control": false,
+      "opcode": "FrameState",
+      "id": 58,
+      "rankWithInput": null,
+      "sourcePosition": {
+        "scriptOffset": 57,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": null,
+      "type": null,
+      "properties": "NoRead, NoWrite, NoThrow",
+      "label": "SpeculativeSafeIntegerAdd[SignedSmall]",
+      "origin": null,
+      "opinfo": "2 v 1 eff 1 ctrl in, 1 v 1 eff 0 ctrl out",
+      "live": true,
+      "title": "SpeculativeSafeIntegerAdd[SignedSmall]",
+      "control": false,
+      "opcode": "SpeculativeSafeIntegerAdd",
+      "id": 55,
+      "rankWithInput": null,
+      "sourcePosition": {
+        "scriptOffset": 88,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": null,
+      "type": null,
+      "properties": "",
+      "label": "JSAdd[String]",
+      "origin": null,
+      "opinfo": "2 v 1 eff 1 ctrl in, 1 v 1 eff 2 ctrl out",
+      "live": true,
+      "title": "JSAdd[String]",
+      "control": false,
+      "opcode": "JSAdd",
+      "id": 48,
+      "rankWithInput": null,
+      "sourcePosition": {
+        "scriptOffset": 114,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": null,
+      "type": null,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "label": "FrameState[INTERPRETED_FRAME, 11, Ignore, 0x2c2e082100e9 <SharedFunctionInfo opt>]",
+      "origin": null,
+      "opinfo": "5 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "title": "FrameState[INTERPRETED_FRAME, 11, Ignore, 0x2c2e082100e9 <SharedFunctionInfo opt>]",
+      "control": false,
+      "opcode": "FrameState",
+      "id": 23,
+      "rankWithInput": null,
+      "sourcePosition": {
+        "scriptOffset": 79,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": null,
+      "type": null,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "label": "FrameState[INTERPRETED_FRAME, 42, Ignore, 0x2c2e082100e9 <SharedFunctionInfo opt>]",
+      "origin": null,
+      "opinfo": "5 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "title": "FrameState[INTERPRETED_FRAME, 42, Ignore, 0x2c2e082100e9 <SharedFunctionInfo opt>]",
+      "control": false,
+      "opcode": "FrameState",
+      "id": 53,
+      "rankWithInput": null,
+      "sourcePosition": {
+        "scriptOffset": 88,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": null,
+      "type": null,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "label": "StateValues[sparse:^.^.]",
+      "origin": null,
+      "opinfo": "2 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "title": "StateValues[sparse:^.^.]",
+      "control": false,
+      "opcode": "StateValues",
+      "id": 49,
+      "rankWithInput": null,
+      "sourcePosition": {
+        "scriptOffset": 114,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": null,
+      "type": null,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "label": "StateValues[sparse:^.^^]",
+      "origin": null,
+      "opinfo": "3 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "title": "StateValues[sparse:^.^^]",
+      "control": false,
+      "opcode": "StateValues",
+      "id": 46,
+      "rankWithInput": null,
+      "sourcePosition": {
+        "scriptOffset": 114,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": null,
+      "type": null,
+      "properties": "",
+      "label": "JSCall[3, 10, NOT_NULL_OR_UNDEFINED, SpeculationMode::kAllowSpeculation, CallFeedbackRelation::kRelated]",
+      "origin": null,
+      "opinfo": "3 v 1 eff 1 ctrl in, 1 v 1 eff 2 ctrl out",
+      "live": true,
+      "title": "JSCall[3, 10, NOT_NULL_OR_UNDEFINED, SpeculationMode::kAllowSpeculation, CallFeedbackRelation::kRelated]",
+      "control": false,
+      "opcode": "JSCall",
+      "id": 43,
+      "rankWithInput": null,
+      "sourcePosition": {
+        "scriptOffset": 104,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": null,
+      "type": null,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "label": "StateValues[sparse:^^^^]",
+      "origin": null,
+      "opinfo": "4 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "title": "StateValues[sparse:^^^^]",
+      "control": false,
+      "opcode": "StateValues",
+      "id": 41,
+      "rankWithInput": null,
+      "sourcePosition": {
+        "scriptOffset": 104,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": null,
+      "type": null,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "label": "StateValues[sparse:^^^.]",
+      "origin": null,
+      "opinfo": "3 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "title": "StateValues[sparse:^^^.]",
+      "control": false,
+      "opcode": "StateValues",
+      "id": 22,
+      "rankWithInput": null,
+      "sourcePosition": {
+        "scriptOffset": 79,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": null,
+      "type": null,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "label": "HeapConstant[0x2c2e0804047d <String[#0]: >]",
+      "origin": null,
+      "opinfo": "0 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "title": "HeapConstant[0x2c2e0804047d <String[#0]: >]",
+      "control": false,
+      "opcode": "HeapConstant",
+      "id": 13,
+      "rankWithInput": null,
+      "sourcePosition": {
+        "scriptOffset": 51,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": null,
+      "type": null,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "label": "FrameState[INTERPRETED_FRAME, 35, Ignore, 0x2c2e082100e9 <SharedFunctionInfo opt>]",
+      "origin": null,
+      "opinfo": "5 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "title": "FrameState[INTERPRETED_FRAME, 35, Ignore, 0x2c2e082100e9 <SharedFunctionInfo opt>]",
+      "control": false,
+      "opcode": "FrameState",
+      "id": 47,
+      "rankWithInput": null,
+      "sourcePosition": {
+        "scriptOffset": 114,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": null,
+      "type": null,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "label": "Parameter[3, debug name: %context]",
+      "origin": null,
+      "opinfo": "1 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "title": "Parameter[3, debug name: %context]",
+      "control": false,
+      "opcode": "Parameter",
+      "id": 3,
+      "rankWithInput": null,
+      "sourcePosition": {
+        "scriptOffset": 12,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": null,
+      "type": null,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "label": "FrameState[INTERPRETED_FRAME, 35, PokeAt(0), 0x2c2e082100e9 <SharedFunctionInfo opt>]",
+      "origin": null,
+      "opinfo": "5 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "title": "FrameState[INTERPRETED_FRAME, 35, PokeAt(0), 0x2c2e082100e9 <SharedFunctionInfo opt>]",
+      "control": false,
+      "opcode": "FrameState",
+      "id": 50,
+      "rankWithInput": null,
+      "sourcePosition": {
+        "scriptOffset": 114,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": null,
+      "type": null,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "label": "FrameState[INTERPRETED_FRAME, 26, PokeAt(0), 0x2c2e082100e9 <SharedFunctionInfo opt>]",
+      "origin": null,
+      "opinfo": "5 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "title": "FrameState[INTERPRETED_FRAME, 26, PokeAt(0), 0x2c2e082100e9 <SharedFunctionInfo opt>]",
+      "control": false,
+      "opcode": "FrameState",
+      "id": 44,
+      "rankWithInput": null,
+      "sourcePosition": {
+        "scriptOffset": 104,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": null,
+      "type": null,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "label": "FrameState[INTERPRETED_FRAME, 26, Ignore, 0x2c2e082100e9 <SharedFunctionInfo opt>]",
+      "origin": null,
+      "opinfo": "5 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "title": "FrameState[INTERPRETED_FRAME, 26, Ignore, 0x2c2e082100e9 <SharedFunctionInfo opt>]",
+      "control": false,
+      "opcode": "FrameState",
+      "id": 42,
+      "rankWithInput": null,
+      "sourcePosition": {
+        "scriptOffset": 104,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": null,
+      "type": null,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "label": "FrameState[INTERPRETED_FRAME, 20, PokeAt(0), 0x2c2e082100e9 <SharedFunctionInfo opt>]",
+      "origin": null,
+      "opinfo": "5 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "title": "FrameState[INTERPRETED_FRAME, 20, PokeAt(0), 0x2c2e082100e9 <SharedFunctionInfo opt>]",
+      "control": false,
+      "opcode": "FrameState",
+      "id": 39,
+      "rankWithInput": null,
+      "sourcePosition": {
+        "scriptOffset": 104,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": null,
+      "type": null,
+      "properties": "",
+      "label": "JSLoadNamed[0x2c2e0818583d <String[#6]: charAt>, sloppy]",
+      "origin": null,
+      "opinfo": "1 v 1 eff 1 ctrl in, 1 v 1 eff 2 ctrl out",
+      "live": true,
+      "title": "JSLoadNamed[0x2c2e0818583d <String[#6]: charAt>, sloppy]",
+      "control": false,
+      "opcode": "JSLoadNamed",
+      "id": 38,
+      "rankWithInput": null,
+      "sourcePosition": {
+        "scriptOffset": 104,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": null,
+      "type": null,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "label": "FrameState[INTERPRETED_FRAME, 15, Ignore, 0x2c2e082100e9 <SharedFunctionInfo opt>]",
+      "origin": null,
+      "opinfo": "5 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "title": "FrameState[INTERPRETED_FRAME, 15, Ignore, 0x2c2e082100e9 <SharedFunctionInfo opt>]",
+      "control": false,
+      "opcode": "FrameState",
+      "id": 27,
+      "rankWithInput": null,
+      "sourcePosition": {
+        "scriptOffset": 75,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": null,
+      "type": null,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "label": "FrameState[INTERPRETED_FRAME, 11, PokeAt(0), 0x2c2e082100e9 <SharedFunctionInfo opt>]",
+      "origin": null,
+      "opinfo": "5 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "title": "FrameState[INTERPRETED_FRAME, 11, PokeAt(0), 0x2c2e082100e9 <SharedFunctionInfo opt>]",
+      "control": false,
+      "opcode": "FrameState",
+      "id": 25,
+      "rankWithInput": null,
+      "sourcePosition": {
+        "scriptOffset": 79,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": [
+        0
+      ],
+      "type": null,
+      "properties": "NoRead, NoWrite, NoThrow, NoDeopt",
+      "label": "IfFalse",
+      "origin": null,
+      "opinfo": "0 v 0 eff 1 ctrl in, 0 v 0 eff 1 ctrl out",
+      "live": true,
+      "title": "IfFalse",
+      "control": true,
+      "opcode": "IfFalse",
+      "id": 30,
+      "rankWithInput": null,
+      "sourcePosition": {
+        "scriptOffset": 75,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": null,
+      "type": null,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "label": "HeapConstant[0x2c2e08210299 <String[#10]: javascript>]",
+      "origin": null,
+      "opinfo": "0 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "title": "HeapConstant[0x2c2e08210299 <String[#10]: javascript>]",
+      "control": false,
+      "opcode": "HeapConstant",
+      "id": 12,
+      "rankWithInput": null,
+      "sourcePosition": {
+        "scriptOffset": 27,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": [
+        0
+      ],
+      "type": null,
+      "properties": "NoRead, NoWrite, NoThrow, NoDeopt",
+      "label": "Branch[None, NoSafetyCheck]",
+      "origin": null,
+      "opinfo": "1 v 0 eff 1 ctrl in, 0 v 0 eff 2 ctrl out",
+      "live": true,
+      "title": "Branch[None, NoSafetyCheck]",
+      "control": true,
+      "opcode": "Branch",
+      "id": 29,
+      "rankWithInput": null,
+      "sourcePosition": {
+        "scriptOffset": 75,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": null,
+      "type": null,
+      "properties": "NoRead, NoWrite, NoThrow, NoDeopt",
+      "label": "Checkpoint",
+      "origin": null,
+      "opinfo": "0 v 1 eff 1 ctrl in, 0 v 1 eff 0 ctrl out",
+      "live": true,
+      "title": "Checkpoint",
+      "control": false,
+      "opcode": "Checkpoint",
+      "id": 26,
+      "rankWithInput": null,
+      "sourcePosition": {
+        "scriptOffset": 75,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": null,
+      "type": null,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "label": "StateValues[dense]",
+      "origin": null,
+      "opinfo": "1 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "title": "StateValues[dense]",
+      "control": false,
+      "opcode": "StateValues",
+      "id": 7,
+      "rankWithInput": null,
+      "sourcePosition": {
+        "scriptOffset": 12,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": null,
+      "type": null,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "label": "StateValues[sparse:....]",
+      "origin": null,
+      "opinfo": "0 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "title": "StateValues[sparse:....]",
+      "control": false,
+      "opcode": "StateValues",
+      "id": 8,
+      "rankWithInput": null,
+      "sourcePosition": {
+        "scriptOffset": 12,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": null,
+      "type": null,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "label": "HeapConstant[0x2c2e08040815 <Odd Oddball: optimized_out>]",
+      "origin": null,
+      "opinfo": "0 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "title": "HeapConstant[0x2c2e08040815 <Odd Oddball: optimized_out>]",
+      "control": false,
+      "opcode": "HeapConstant",
+      "id": 9,
+      "rankWithInput": null,
+      "sourcePosition": {
+        "scriptOffset": 12,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": null,
+      "type": null,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "label": "Parameter[-1, debug name: %closure]",
+      "origin": null,
+      "opinfo": "1 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "title": "Parameter[-1, debug name: %closure]",
+      "control": false,
+      "opcode": "Parameter",
+      "id": 10,
+      "rankWithInput": null,
+      "sourcePosition": {
+        "scriptOffset": 12,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": null,
+      "type": null,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "label": "Parameter[0, debug name: %this]",
+      "origin": null,
+      "opinfo": "1 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "title": "Parameter[0, debug name: %this]",
+      "control": false,
+      "opcode": "Parameter",
+      "id": 1,
+      "rankWithInput": null,
+      "sourcePosition": {
+        "scriptOffset": 12,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": null,
+      "type": null,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "label": "StateValues[sparse:^^^.]",
+      "origin": null,
+      "opinfo": "3 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "title": "StateValues[sparse:^^^.]",
+      "control": false,
+      "opcode": "StateValues",
+      "id": 57,
+      "rankWithInput": null,
+      "sourcePosition": {
+        "scriptOffset": 57,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": null,
+      "type": null,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "label": "NumberConstant[1]",
+      "origin": null,
+      "opinfo": "0 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "title": "NumberConstant[1]",
+      "control": false,
+      "opcode": "NumberConstant",
+      "id": 54,
+      "rankWithInput": null,
+      "sourcePosition": {
+        "scriptOffset": 88,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": null,
+      "type": null,
+      "properties": "NoRead, NoWrite, NoThrow, NoDeopt",
+      "label": "Checkpoint",
+      "origin": null,
+      "opinfo": "0 v 1 eff 1 ctrl in, 0 v 1 eff 0 ctrl out",
+      "live": true,
+      "title": "Checkpoint",
+      "control": false,
+      "opcode": "Checkpoint",
+      "id": 51,
+      "rankWithInput": null,
+      "sourcePosition": {
+        "scriptOffset": 88,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": null,
+      "type": null,
+      "properties": "NoRead, NoWrite, NoThrow, NoDeopt",
+      "label": "Checkpoint",
+      "origin": null,
+      "opinfo": "0 v 1 eff 1 ctrl in, 0 v 1 eff 0 ctrl out",
+      "live": true,
+      "title": "Checkpoint",
+      "control": false,
+      "opcode": "Checkpoint",
+      "id": 45,
+      "rankWithInput": null,
+      "sourcePosition": {
+        "scriptOffset": 114,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": null,
+      "type": null,
+      "properties": "Idempotent, NoRead, NoWrite, NoThrow, NoDeopt",
+      "label": "StateValues[sparse:^^..]",
+      "origin": null,
+      "opinfo": "2 v 0 eff 0 ctrl in, 1 v 0 eff 0 ctrl out",
+      "live": true,
+      "title": "StateValues[sparse:^^..]",
+      "control": false,
+      "opcode": "StateValues",
+      "id": 52,
+      "rankWithInput": null,
+      "sourcePosition": {
+        "scriptOffset": 88,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": null,
+      "type": null,
+      "properties": "NoRead, NoWrite, NoThrow, NoDeopt",
+      "label": "Checkpoint",
+      "origin": null,
+      "opinfo": "0 v 1 eff 1 ctrl in, 0 v 1 eff 0 ctrl out",
+      "live": true,
+      "title": "Checkpoint",
+      "control": false,
+      "opcode": "Checkpoint",
+      "id": 40,
+      "rankWithInput": null,
+      "sourcePosition": {
+        "scriptOffset": 104,
+        "inliningId": -1
+      }
+    },
+    {
+      "rankInputs": [
+        0
+      ],
+      "type": null,
+      "properties": "NoRead, NoWrite, NoThrow, NoDeopt",
+      "label": "IfTrue",
+      "origin": null,
+      "opinfo": "0 v 0 eff 1 ctrl in, 0 v 0 eff 1 ctrl out",
+      "live": true,
+      "title": "IfTrue",
+      "control": true,
+      "opcode": "IfTrue",
+      "id": 36,
+      "rankWithInput": null,
+      "sourcePosition": {
+        "scriptOffset": 75,
+        "inliningId": -1
+      }
+    }
+  ],
+  "EDGES": [
+    {
+      "from": 4,
+      "to": 6,
+      "kind": "context"
+    },
+    {
+      "from": 4,
+      "to": 56,
+      "kind": "context"
+    },
+    {
+      "from": 17,
+      "to": 24,
+      "kind": "context"
+    },
+    {
+      "from": 4,
+      "to": 48,
+      "kind": "context"
+    },
+    {
+      "from": 4,
+      "to": 43,
+      "kind": "context"
+    },
+    {
+      "from": 17,
+      "to": 38,
+      "kind": "context"
+    }
+  ],
+  "KIND": [
+    "context"
+  ],
+  "baseline_similarity": 0.42056074766355145,
+  "prior_phase_similarity": 0.0
+}
