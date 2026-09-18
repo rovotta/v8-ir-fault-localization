@@ -1,5 +1,8 @@
 # v8-ir-fault-localization
 
+![Alt Text](images/my-screenshot.png)
+
+
 A labeled dataset of **Google V8 TurboFan Internal Representation (IR) graphs** built around a known V8 miscompilation bug, packaged
 for downstream fault-localization and visualization research.
 
